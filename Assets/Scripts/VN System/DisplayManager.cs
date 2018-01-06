@@ -17,12 +17,31 @@ namespace Logic
         Forward,
         AllDirections,
     }
+    
+    /// <summary>
+    /// Struct used to define a choice in the game
+    /// </summary>
+    [System.Serializable]
+    public struct Choice
+    {
+        /// <summary>
+        /// Line of text to display
+        /// </summary>
+        public string line;
+        /// <summary>
+        /// Decision command
+        /// </summary>
+        public Command decisionCommand;
+    }
+
     /// <summary>
     /// Script in charge of handling display of vn
     /// </summary>
     public class DisplayManager : MonoBehaviour
     {
         public System.Action onNextLine = null;
+        public System.Action<int> onChoiceSelected = null;
+
         /// <summary>
         /// Single reference of Display Manager
         /// </summary>
@@ -39,6 +58,7 @@ namespace Logic
         private Image m_MainBackground = null;
         [SerializeField]
         private RectTransform m_CharacterLayer = null;
+        
         [Header("Dialogue Display")]
         [SerializeField]
         private GameObject m_DialogueDisplay = null;
@@ -54,6 +74,13 @@ namespace Logic
         private Text m_NameLabel = null;
         [SerializeField]
         private float m_TextDisplayTime = 0.016f;
+
+        [Header("Choices Display")]
+        [SerializeField]
+        private UI.ChoiceCard m_ChoiceCardPrefab = null;
+        [SerializeField]
+        private RectTransform m_ChoiceCardsPanel = null;
+        private List<UI.ChoiceCard> m_ChoiceCardsAvailable = null;
         [Header("Change Scene Settings")]
         [SerializeField]
         private float m_FadeTime = 2f;
@@ -238,6 +265,43 @@ namespace Logic
                 yield return new WaitForSeconds(0.016f);
             }            
         }   
+
+        public void DisplayChoices(Choice[] choices)
+        {
+            // check if no choice cards have been created
+            if(m_ChoiceCardsAvailable == null)
+            {
+                m_ChoiceCardsAvailable = new List<UI.ChoiceCard>();
+            }
+            // compare size of list with choices
+            int difference = Mathf.Abs(m_ChoiceCardsAvailable.Count - choices.Length);
+            UI.ChoiceCard choiceCard = null;
+            for (int cIndex = 0; cIndex < difference; cIndex++)
+            {
+                choiceCard = GameObject.Instantiate(m_ChoiceCardPrefab);
+                choiceCard.transform.SetParent(m_ChoiceCardsPanel);
+                choiceCard.transform.localPosition = Vector3.zero;
+                choiceCard.transform.localRotation = Quaternion.identity;
+                choiceCard.transform.localScale = new Vector3(1, 1, 1);
+                choiceCard.gameObject.SetActive(false);
+                m_ChoiceCardsAvailable[cIndex] = choiceCard;
+            }
+            // iterate through choices
+            for (int cIndex = 0; cIndex < choices.Length; cIndex++)
+            {
+
+            }
+        }
+
+        private void SelectChoice(int choiceIndex)
+        {
+            if(onChoiceSelected != null)
+            {
+                onChoiceSelected(choiceIndex);
+                onChoiceSelected = null;
+            }
+        }
+
         
         /// <summary>
         /// Camera shake

@@ -111,7 +111,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1514763590284730
 GameObject:
   m_ObjectHideFlags: 1
@@ -212,8 +212,9 @@ MonoBehaviour:
   m_DialogueDisplay: {fileID: 1442307435326016}
   m_BoxBackground: {fileID: 114881331802539726}
   m_TextDisplay: {fileID: 114947173837695216}
+  m_NameDisplay: {fileID: 1514763590284730}
   m_NameBackground: {fileID: 114499881210558476}
-  m_NameDisplay: {fileID: 114854038334560282}
+  m_NameLabel: {fileID: 114854038334560282}
   m_TextDisplayTime: 0.016
   m_FadeTime: 2
   m_FadeImage: {fileID: 0}

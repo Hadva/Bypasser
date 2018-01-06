@@ -27,7 +27,15 @@ namespace Logic
         public override void Enter()
         {
             base.Enter();
-            DisplayManager.instance.DisplayName(nameVar.value);
+            if (nameVar != null)
+            {
+                DisplayManager.instance.ToggleNameDisplay(true);
+                DisplayManager.instance.DisplayName(nameVar.value);
+            }
+            else
+            {
+                DisplayManager.instance.ToggleNameDisplay(false);
+            }
             DisplayManager.instance.DisplayNewLine(m_NewLine);
             m_Status = Status.Continue;
             DisplayManager.instance.onNextLine = Continue;

@@ -351,7 +351,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d4fac920e292824b8b9f9a82032ec45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Event: {fileID: 706684926}
 --- !u!1 &884808189
 GameObject:
   m_ObjectHideFlags: 0
@@ -492,7 +491,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f74ab72d9fc9c24781093aa2bdf8b4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Characters: []
+  m_Characters:
+  - {fileID: 0}
+  - {fileID: 0}
   m_Commands:
   - {fileID: 1240366896}
   - {fileID: 177874413}
@@ -558,5 +559,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c78c35aff8a25b40b37b1835329427d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nameVar: {fileID: 706684925}
+  nameVar: {fileID: 0}
   m_NewLine: I open my eyes reluctantly
