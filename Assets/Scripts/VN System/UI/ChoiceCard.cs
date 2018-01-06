@@ -27,5 +27,7 @@ namespace Logic.UI
         [SerializeField]
         public Text choiceLabel = null;
 
+        public bool initialized = false;
+
     }
 }

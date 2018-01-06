@@ -10,12 +10,16 @@ namespace Logic
 
         private Status m_Status = Status.Continue;
 
-        protected override Status UpdateNode()
+        public override void Enter()
         {
             m_Status = Status.Continue;
             DisplayManager.instance.DisplayChoices(m_Choices);
             // hook on choice selected event
             DisplayManager.instance.onChoiceSelected = SelectChoice;
+        }
+
+        protected override Status UpdateNode()
+        {     
             return m_Status;
         }
 
@@ -24,7 +28,22 @@ namespace Logic
         /// </summary>
         private void SelectChoice(int index)
         {
+            m_Choices[index].decisionCommand.Enter();
+            m_Choices[index].decisionCommand.Execute();
+            if (m_Choices[index].decisionCommand is DisplayLine)
+            {
+                DisplayManager.instance.onNextLine = Continue;
+            }
+            else
+            {
+                m_Status = Status.Success;
+            }
+        }
+
+        private void Continue()
+        {
             m_Status = Status.Success;
         }
+
     }
 }

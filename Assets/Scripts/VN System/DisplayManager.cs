@@ -278,23 +278,40 @@ namespace Logic
             UI.ChoiceCard choiceCard = null;
             for (int cIndex = 0; cIndex < difference; cIndex++)
             {
+                // instantiate choice card
                 choiceCard = GameObject.Instantiate(m_ChoiceCardPrefab);
+                // set parent and position
                 choiceCard.transform.SetParent(m_ChoiceCardsPanel);
                 choiceCard.transform.localPosition = Vector3.zero;
                 choiceCard.transform.localRotation = Quaternion.identity;
-                choiceCard.transform.localScale = new Vector3(1, 1, 1);
+                choiceCard.transform.localScale = new Vector3(1, 1, 1);      
+                // disable choice card
                 choiceCard.gameObject.SetActive(false);
-                m_ChoiceCardsAvailable[cIndex] = choiceCard;
+                m_ChoiceCardsAvailable.Add(choiceCard);
             }
             // iterate through choices
             for (int cIndex = 0; cIndex < choices.Length; cIndex++)
             {
-
+                // cache choice card
+                choiceCard = m_ChoiceCardsAvailable[cIndex];
+                // check if it hasn't been init
+                if (!choiceCard.initialized)
+                {
+                    int choiceIndex = cIndex;
+                    choiceCard.choiceButton.onClick.AddListener(() => SelectChoice(choiceIndex));
+                }
+                choiceCard.choiceLabel.text = choices[cIndex].line;
+                choiceCard.gameObject.SetActive(true);
             }
         }
 
         private void SelectChoice(int choiceIndex)
         {
+            // hide choice display
+            for(int cIndex = 0;cIndex < m_ChoiceCardsAvailable.Count; cIndex++)
+            {
+                m_ChoiceCardsAvailable[cIndex].gameObject.SetActive(false);
+            }
             if(onChoiceSelected != null)
             {
                 onChoiceSelected(choiceIndex);
