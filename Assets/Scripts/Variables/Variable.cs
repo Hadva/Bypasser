@@ -4,6 +4,15 @@ using UnityEngine;
 namespace Logic
 {
     /// <summary>
+    /// Enum used to define variable field types
+    /// </summary>
+    public enum eVariableFieldType
+    {
+        Local = 0,
+        Global = 1,
+    }
+
+    /// <summary>
     /// Class used to define a variable
     /// </summary>
     public abstract class Variable<T> : MonoBehaviour
