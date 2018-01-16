@@ -8,7 +8,7 @@ namespace Logic
     /// New line of text to display. Status is set to continue during enter, it will change whenever input has been detected.
     /// </summary>
     public class DisplayLine : Command
-    {
+    {      
         /// <summary>
         /// Name to display
         /// </summary>
@@ -20,7 +20,6 @@ namespace Logic
         /// </summary>
         [SerializeField]
         private string m_NewLine = string.Empty;
-
 
         private Status m_Status = Status.Continue;
 

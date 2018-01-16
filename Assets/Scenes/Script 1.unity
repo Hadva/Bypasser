@@ -122,7 +122,7 @@ GameObject:
   - component: {fileID: 67436609}
   - component: {fileID: 67436608}
   m_Layer: 0
-  m_Name: Player - Who's there?
+  m_Name: Player - phone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -140,7 +140,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nameVar: {fileID: 2130334621}
-  m_NewLine: Who's there?
+  m_NewLine: What kinda phone only has 3 characters for a name?!
 --- !u!4 &67436609
 Transform:
   m_ObjectHideFlags: 0
@@ -152,7 +152,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 673832909}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &407568606
 GameObject:
@@ -452,8 +452,8 @@ Transform:
   m_Children:
   - {fileID: 1994346526}
   - {fileID: 605822741}
-  - {fileID: 684719537}
   - {fileID: 67436609}
+  - {fileID: 684719537}
   - {fileID: 1141417362}
   - {fileID: 1575065523}
   - {fileID: 1605060563}
@@ -479,7 +479,7 @@ GameObject:
   - component: {fileID: 684719537}
   - component: {fileID: 684719536}
   m_Layer: 0
-  m_Name: Ice - Hello!
+  m_Name: Player - thoughts
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -496,8 +496,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c78c35aff8a25b40b37b1835329427d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nameVar: {fileID: 747888329}
-  m_NewLine: Hello!
+  nameVar: {fileID: 0}
+  m_NewLine: Finally saved enough money to get a new phone, a little gift for myself
+    during Christmas. It is almost midnight on Friday, Friends are out on parties,
+    and my family are out of town as usual. Here I am, getting ready for bed, when
+    my buddy Nat suddenly called.
 --- !u!4 &684719537
 Transform:
   m_ObjectHideFlags: 0
@@ -509,7 +512,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 673832909}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &686186424
 GameObject:

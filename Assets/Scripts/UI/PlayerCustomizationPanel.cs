@@ -48,6 +48,12 @@ namespace Logic.UI
         private GameObject m_ConfirmNamePanel = null;
 
         /// <summary>
+        /// Label to display confirmation message
+        /// </summary>
+        [SerializeField]
+        private Text m_ConfirmNameMessage = null;
+
+        /// <summary>
         /// Fired when a name entered is not valid
         /// </summary>
         [SerializeField]
@@ -84,6 +90,8 @@ namespace Logic.UI
                 m_InvalidNamePanel.SetActive(true);
                 return;
             }
+            // update name validation lable
+            m_ConfirmNameMessage.text = "Is " + m_PlayerNameField.text + " your name?";
             // validate name
             m_ConfirmNamePanel.SetActive(true);
         }
@@ -97,6 +105,7 @@ namespace Logic.UI
             m_NamePanel.SetActive(false);
             GlobalVariables.GetVariable<string>(m_PlayerNameVarId).value = m_PlayerNameField.text;
             GameManager.instance.SetPlayerName(m_PlayerNameField.text);
+            GameManager.LoadScene(m_LoadSceneAfterCustomization);
         }
 
         /// <summary>

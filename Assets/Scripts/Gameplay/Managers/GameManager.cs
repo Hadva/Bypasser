@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Logic.Utilities;
+using UnityEngine.SceneManagement;
 namespace Logic.Gameplay
 {
     /// <summary>
@@ -46,7 +47,13 @@ namespace Logic.Gameplay
         /// <summary>
         /// Reference to player name var
         /// </summary>
-        private StringVar m_PlayerNameVar = null;        
+        private StringVar m_PlayerNameVar = null;
+
+        /// <summary>
+        /// Scene to load
+        /// </summary>
+        [SerializeField]
+        private string m_SceneToLoadAtStart = "";    
            
         /// <summary>
         /// Set player name
@@ -91,6 +98,7 @@ namespace Logic.Gameplay
             if (instance == null)
             {
                 instance = this;
+                DontDestroyOnLoad(this.gameObject);
             }
             else
             {
@@ -116,6 +124,17 @@ namespace Logic.Gameplay
             // obtain player name var
             m_PlayerNameVar = GlobalVariables.GetVariable<string>(m_PlayerNameVarId) as StringVar;
             m_PlayerNameVar.value = m_Save.chaptersSave[m_Save.lastSaveSlotPlayed].playerName;
+            LoadScene(m_SceneToLoadAtStart);
+        }
+
+        /// <summary>
+        /// Loads scene with provided name
+        /// </summary>
+        /// <param name="sceneName"></param>
+        public static void LoadScene(string sceneName)
+        {
+            // load scene additive
+            SceneManager.LoadScene(sceneName);
         }
 
         /// <summary>

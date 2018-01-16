@@ -42,6 +42,7 @@ namespace Logic
         public System.Action onNextLine = null;
         public System.Action<int> onChoiceSelected = null;
 
+        private const string PLAYER_NAME_REPLACE = "$playerName";
         /// <summary>
         /// Single reference of Display Manager
         /// </summary>
@@ -58,7 +59,8 @@ namespace Logic
         private Image m_MainBackground = null;
         [SerializeField]
         private RectTransform m_CharacterLayer = null;
-        
+        [SerializeField]
+        private StringVar m_PlayerName = null;
         [Header("Dialogue Display")]
         [SerializeField]
         private GameObject m_DialogueDisplay = null;
@@ -256,11 +258,16 @@ namespace Logic
         /// Display line of text as text typer
         /// </summary>
         private IEnumerator DisplayLine(string newLine)
-        {
+        {                 
+            
             int currentCharacter = 0;
+            // replace playername 
+            newLine = newLine.Replace(PLAYER_NAME_REPLACE, m_PlayerName.value);
+            // set character count
             int characterCount = newLine.Length;
+            // display characters
             while (currentCharacter < characterCount)
-            {
+            {             
                 m_TextDisplay.text += newLine[currentCharacter++];
                 yield return new WaitForSeconds(0.016f);
             }            

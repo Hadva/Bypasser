@@ -20,6 +20,9 @@ namespace Logic
         [SerializeField]
         private Command[] m_Commands = null;
 
+        [SerializeField]
+        private float m_DelayAtStart = 1f;
+
         private DisplayManager m_DisplayManager = null;
 
         /// <summary>
@@ -51,8 +54,12 @@ namespace Logic
             return characterInstances;            
         }
 
+        /// <summary>
+        /// Runs series of commands
+        /// </summary>
         private IEnumerator RunCommands()
         {
+            yield return new WaitForSeconds(m_DelayAtStart);
             Status commandStatus = Status.Error;
             // iterate through commands
             for(int comIndex =0; comIndex < m_Commands.Length; comIndex++)
