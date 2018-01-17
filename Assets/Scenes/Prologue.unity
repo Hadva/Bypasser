@@ -139,7 +139,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1916367208}
-  m_RootOrder: 23
+  m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &5494420
 MonoBehaviour:
@@ -185,7 +185,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1916367208}
-  m_RootOrder: 27
+  m_RootOrder: 28
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &13758505
 MonoBehaviour:
@@ -290,7 +290,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1916367208}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &110745589
 GameObject:
@@ -319,7 +319,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1916367208}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &110745591
 MonoBehaviour:
@@ -407,7 +407,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1916367208}
-  m_RootOrder: 14
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &161110072
 MonoBehaviour:
@@ -452,7 +452,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1916367208}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &167959472
 MonoBehaviour:
@@ -470,6 +470,50 @@ MonoBehaviour:
   variableFieldType: 0
   nameVar: {fileID: 0}
   characterName: 
+--- !u!1 &196023566
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 196023567}
+  - component: {fileID: 196023568}
+  m_Layer: 0
+  m_Name: Ice - (31)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &196023567
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 196023566}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 257775233}
+  m_RootOrder: 51
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &196023568
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 196023566}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c78c35aff8a25b40b37b1835329427d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_NewLine: You idiot!
+  variableFieldType: 2
+  nameVar: {fileID: 2130334621}
+  characterName: ICE
 --- !u!1 &198811829
 GameObject:
   m_ObjectHideFlags: 0
@@ -497,7 +541,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1916367208}
-  m_RootOrder: 17
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &198811831
 MonoBehaviour:
@@ -541,7 +585,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1916367208}
-  m_RootOrder: 15
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &212525975
 MonoBehaviour:
@@ -620,8 +664,33 @@ Transform:
   - {fileID: 694776114}
   - {fileID: 1549526958}
   - {fileID: 1293171418}
+  - {fileID: 1031466921}
+  - {fileID: 450546230}
+  - {fileID: 1507436452}
+  - {fileID: 1453684571}
+  - {fileID: 1665698296}
+  - {fileID: 1144061452}
+  - {fileID: 1933543813}
+  - {fileID: 1863010943}
+  - {fileID: 1817800923}
+  - {fileID: 1064376634}
+  - {fileID: 1625267950}
+  - {fileID: 1051176650}
+  - {fileID: 1305728281}
+  - {fileID: 1499513382}
+  - {fileID: 308906482}
+  - {fileID: 196023567}
+  - {fileID: 1199209403}
+  - {fileID: 454695699}
+  - {fileID: 1372127945}
+  - {fileID: 1247858485}
+  - {fileID: 2135195413}
+  - {fileID: 478855786}
+  - {fileID: 427841111}
+  - {fileID: 627183223}
+  - {fileID: 1349938048}
   m_Father: {fileID: 673832909}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &260857740
 GameObject:
@@ -650,7 +719,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1916367208}
-  m_RootOrder: 24
+  m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &260857742
 MonoBehaviour:
@@ -710,6 +779,48 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_NewBackground: {fileID: 21300000, guid: 4d1df01aefff34449a01c04647c4a5d3, type: 3}
+  m_FadeTime: 5
+--- !u!1 &308906481
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 308906482}
+  - component: {fileID: 308906483}
+  m_Layer: 0
+  m_Name: HELPLESS LOOKS
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &308906482
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 308906481}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 257775233}
+  m_RootOrder: 50
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &308906483
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 308906481}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 556ae79d57f57a543b48e896cbd4a0b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_NewBackground: {fileID: 21300000, guid: 7f9a8ae1f215bfd44b534f32ac8537dd, type: 3}
   m_FadeTime: 5
 --- !u!1 &321071533
 GameObject:
@@ -827,7 +938,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1916367208}
-  m_RootOrder: 20
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &350790911
 MonoBehaviour:
@@ -932,6 +1043,50 @@ Transform:
   m_Father: {fileID: 257775233}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &427841110
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 427841111}
+  - component: {fileID: 427841112}
+  m_Layer: 0
+  m_Name: Player - (21)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &427841111
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 427841110}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 257775233}
+  m_RootOrder: 58
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &427841112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 427841110}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c78c35aff8a25b40b37b1835329427d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_NewLine: Before I could utter another word, Ice leaps into the portal.
+  variableFieldType: 1
+  nameVar: {fileID: 0}
+  characterName: 
 --- !u!1 &430232974
 GameObject:
   m_ObjectHideFlags: 0
@@ -959,7 +1114,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1916367208}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &430232976
 MonoBehaviour:
@@ -1043,7 +1198,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1916367208}
-  m_RootOrder: 28
+  m_RootOrder: 29
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &448677420
 MonoBehaviour:
@@ -1061,6 +1216,138 @@ MonoBehaviour:
   variableFieldType: 0
   nameVar: {fileID: 0}
   characterName: 
+--- !u!1 &450546229
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 450546230}
+  - component: {fileID: 450546231}
+  m_Layer: 0
+  m_Name: Ice - (23)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &450546230
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 450546229}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 257775233}
+  m_RootOrder: 37
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &450546231
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 450546229}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c78c35aff8a25b40b37b1835329427d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_NewLine: Since the spell sent me here to you, that means we should be in Ebonia
+    already, or at least close to it.
+  variableFieldType: 2
+  nameVar: {fileID: 2130334621}
+  characterName: ICE
+--- !u!1 &454695698
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 454695699}
+  - component: {fileID: 454695700}
+  m_Layer: 0
+  m_Name: FADE TO ICE PORTAL
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &454695699
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 454695698}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 257775233}
+  m_RootOrder: 53
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &454695700
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 454695698}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 556ae79d57f57a543b48e896cbd4a0b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_NewBackground: {fileID: 21300000, guid: 7f9a8ae1f215bfd44b534f32ac8537dd, type: 3}
+  m_FadeTime: 5
+--- !u!1 &478855785
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 478855786}
+  - component: {fileID: 478855787}
+  m_Layer: 0
+  m_Name: Ice - (35)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &478855786
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 478855785}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 257775233}
+  m_RootOrder: 57
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &478855787
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 478855785}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c78c35aff8a25b40b37b1835329427d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_NewLine: Oh! by the way, the portal only lasts for 30 seconds and it's been 20
+    already. So, see ya!
+  variableFieldType: 2
+  nameVar: {fileID: 2130334621}
+  characterName: ICE
 --- !u!1 &525205282
 GameObject:
   m_ObjectHideFlags: 0
@@ -1184,13 +1471,57 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 605822739}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 45, y: 643, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1916367208}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &627183222
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 627183223}
+  - component: {fileID: 627183224}
+  m_Layer: 0
+  m_Name: Player - (22)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &627183223
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 627183222}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 673832909}
-  m_RootOrder: 1
+  m_Father: {fileID: 257775233}
+  m_RootOrder: 59
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &627183224
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 627183222}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c78c35aff8a25b40b37b1835329427d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_NewLine: At least tell me more about this place before you go...
+  variableFieldType: 0
+  nameVar: {fileID: 2130334621}
+  characterName: 
 --- !u!1 &660522626
 GameObject:
   m_ObjectHideFlags: 0
@@ -1307,79 +1638,122 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Characters:
   - {fileID: 114889853546439690, guid: ff5bc910b68dd324c8e096e3d317aef9, type: 2}
-  m_Commands:
-  - {fileID: 605822740}
-  - {fileID: 67436608}
-  - {fileID: 430232976}
-  - {fileID: 684719536}
-  - {fileID: 167959472}
-  - {fileID: 110745591}
-  - {fileID: 1351212934}
-  - {fileID: 1322288574}
-  - {fileID: 926288821}
-  - {fileID: 1455684020}
-  - {fileID: 1744595696}
-  - {fileID: 752504706}
-  - {fileID: 2002444983}
-  - {fileID: 741808879}
-  - {fileID: 1325436346}
-  - {fileID: 161110072}
-  - {fileID: 212525975}
-  - {fileID: 1523004033}
-  - {fileID: 198811831}
-  - {fileID: 1728861995}
-  - {fileID: 2037774805}
-  - {fileID: 350790911}
-  - {fileID: 770189873}
-  - {fileID: 946877352}
-  - {fileID: 5494420}
-  - {fileID: 260857742}
-  - {fileID: 1735121503}
-  - {fileID: 696287967}
-  - {fileID: 13758505}
-  - {fileID: 448677420}
-  - {fileID: 1474509002}
-  - {fileID: 1404001004}
-  - {fileID: 854917132}
-  - {fileID: 1412637804}
-  - {fileID: 2081364217}
-  - {fileID: 1723771726}
-  - {fileID: 1276563235}
-  - {fileID: 1273576379}
-  - {fileID: 1056175406}
-  - {fileID: 1889471664}
-  - {fileID: 1462528615}
-  - {fileID: 1576992658}
-  - {fileID: 1426387563}
-  - {fileID: 535747345}
-  - {fileID: 1273505294}
-  - {fileID: 1952421294}
-  - {fileID: 1790186115}
-  - {fileID: 1407247962}
-  - {fileID: 348552899}
-  - {fileID: 807256253}
-  - {fileID: 1267527921}
-  - {fileID: 1389719873}
-  - {fileID: 289847104}
-  - {fileID: 1894871912}
-  - {fileID: 1272599379}
-  - {fileID: 1756724415}
-  - {fileID: 1894871912}
-  - {fileID: 1272599379}
-  - {fileID: 1756724415}
-  - {fileID: 383951271}
-  - {fileID: 1435914739}
-  - {fileID: 870692774}
-  - {fileID: 321071535}
-  - {fileID: 1273165248}
-  - {fileID: 440374622}
-  - {fileID: 385270296}
-  - {fileID: 1978781043}
-  - {fileID: 1271831626}
-  - {fileID: 985630910}
-  - {fileID: 125393368}
-  - {fileID: 1584283970}
-  - {fileID: 1193667495}
+  m_CommandBlock:
+  - blockTitle: INTRO
+    commands:
+    - {fileID: 605822740}
+    - {fileID: 67436608}
+    - {fileID: 430232976}
+    - {fileID: 684719536}
+    - {fileID: 167959472}
+    - {fileID: 110745591}
+    - {fileID: 1351212934}
+    - {fileID: 1322288574}
+    - {fileID: 926288821}
+    - {fileID: 1455684020}
+    - {fileID: 1744595696}
+    - {fileID: 752504706}
+    - {fileID: 2002444983}
+    - {fileID: 741808879}
+    - {fileID: 1325436346}
+    - {fileID: 161110072}
+    - {fileID: 212525975}
+    - {fileID: 1523004033}
+    - {fileID: 198811831}
+    - {fileID: 1728861995}
+    - {fileID: 2037774805}
+    - {fileID: 350790911}
+    - {fileID: 770189873}
+    - {fileID: 946877352}
+    - {fileID: 5494420}
+    - {fileID: 260857742}
+    - {fileID: 1735121503}
+    - {fileID: 696287967}
+    - {fileID: 13758505}
+    - {fileID: 448677420}
+    - {fileID: 1474509002}
+    - {fileID: 1404001004}
+    - {fileID: 854917132}
+    - {fileID: 1412637804}
+    - {fileID: 2081364217}
+  - blockTitle: LANDING
+    commands:
+    - {fileID: 1723771726}
+    - {fileID: 1276563235}
+    - {fileID: 1273576379}
+    - {fileID: 1056175406}
+    - {fileID: 1889471664}
+    - {fileID: 1462528615}
+    - {fileID: 1576992658}
+    - {fileID: 1426387563}
+    - {fileID: 535747345}
+    - {fileID: 1273505294}
+    - {fileID: 1952421294}
+    - {fileID: 1790186115}
+    - {fileID: 1407247962}
+    - {fileID: 348552899}
+    - {fileID: 807256253}
+    - {fileID: 1267527921}
+    - {fileID: 1389719873}
+    - {fileID: 289847104}
+  - blockTitle: ICE INTRO
+    commands:
+    - {fileID: 1894871912}
+    - {fileID: 1272599379}
+    - {fileID: 1756724415}
+    - {fileID: 383951271}
+    - {fileID: 1435914739}
+    - {fileID: 870692774}
+    - {fileID: 321071535}
+    - {fileID: 1273165248}
+    - {fileID: 440374622}
+    - {fileID: 385270296}
+    - {fileID: 1978781043}
+    - {fileID: 1271831626}
+    - {fileID: 985630910}
+    - {fileID: 125393368}
+    - {fileID: 1584283970}
+    - {fileID: 1193667495}
+    - {fileID: 811014628}
+    - {fileID: 1075005999}
+    - {fileID: 30293360}
+    - {fileID: 666039823}
+    - {fileID: 525205284}
+    - {fileID: 1115710355}
+    - {fileID: 854758658}
+    - {fileID: 1684768157}
+    - {fileID: 1089715305}
+    - {fileID: 1222052527}
+    - {fileID: 1569811415}
+    - {fileID: 1066628593}
+    - {fileID: 1014401861}
+    - {fileID: 1347989861}
+    - {fileID: 694776115}
+    - {fileID: 1549526959}
+    - {fileID: 1293171419}
+    - {fileID: 1031466922}
+    - {fileID: 450546231}
+    - {fileID: 1507436453}
+    - {fileID: 1453684572}
+    - {fileID: 1665698297}
+    - {fileID: 1144061453}
+    - {fileID: 1933543814}
+    - {fileID: 1817800924}
+    - {fileID: 1064376635}
+    - {fileID: 1625267951}
+    - {fileID: 1051176651}
+    - {fileID: 1305728282}
+    - {fileID: 1499513383}
+    - {fileID: 196023568}
+    - {fileID: 1199209404}
+    - {fileID: 454695700}
+    - {fileID: 1372127946}
+    - {fileID: 1247858486}
+    - {fileID: 2135195414}
+    - {fileID: 478855787}
+    - {fileID: 427841112}
+    - {fileID: 627183224}
+    - {fileID: 1349938049}
   m_DelayAtStart: 1
 --- !u!4 &673832909
 Transform:
@@ -1392,7 +1766,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1994346526}
-  - {fileID: 605822741}
   - {fileID: 1916367208}
   - {fileID: 1391827645}
   - {fileID: 257775233}
@@ -1442,7 +1815,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1916367208}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &694776113
 GameObject:
@@ -1515,7 +1888,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1916367208}
-  m_RootOrder: 26
+  m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &696287967
 MonoBehaviour:
@@ -1561,7 +1934,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1916367208}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &741808879
 MonoBehaviour:
@@ -1606,7 +1979,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1916367208}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &752504706
 MonoBehaviour:
@@ -1650,7 +2023,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1916367208}
-  m_RootOrder: 21
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &770189873
 MonoBehaviour:
@@ -1831,7 +2204,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1916367208}
-  m_RootOrder: 31
+  m_RootOrder: 32
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &854917132
 MonoBehaviour:
@@ -1919,7 +2292,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1916367208}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &926288821
 MonoBehaviour:
@@ -1963,7 +2336,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1916367208}
-  m_RootOrder: 22
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &946877352
 MonoBehaviour:
@@ -2068,6 +2441,97 @@ MonoBehaviour:
   variableFieldType: 2
   nameVar: {fileID: 2130334621}
   characterName: ICE
+--- !u!1 &1031466920
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1031466921}
+  - component: {fileID: 1031466922}
+  m_Layer: 0
+  m_Name: Ice - (22)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1031466921
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1031466920}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 257775233}
+  m_RootOrder: 36
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1031466922
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1031466920}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c78c35aff8a25b40b37b1835329427d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_NewLine: "Well it's not that I don't want to, but the teleportation spell is only
+    assigned to take me to Ebonia, and on the pamphlet it says \"Abandon hope all
+    ye who enter here\". So essentially it\u2019s a one way trip."
+  variableFieldType: 2
+  nameVar: {fileID: 2130334621}
+  characterName: ICE
+--- !u!1 &1051176649
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1051176650}
+  - component: {fileID: 1051176651}
+  m_Layer: 0
+  m_Name: Ice - (29)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1051176650
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1051176649}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 257775233}
+  m_RootOrder: 47
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1051176651
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1051176649}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c78c35aff8a25b40b37b1835329427d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_NewLine: It's Ebonia! Although the assignment difficulty is S+, the hazard level
+    is only C-.
+  variableFieldType: 2
+  nameVar: {fileID: 2130334621}
+  characterName: ICE
 --- !u!1 &1056175404
 GameObject:
   m_ObjectHideFlags: 0
@@ -2112,6 +2576,50 @@ MonoBehaviour:
   variableFieldType: 0
   nameVar: {fileID: 2130334621}
   characterName: 
+--- !u!1 &1064376633
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1064376634}
+  - component: {fileID: 1064376635}
+  m_Layer: 0
+  m_Name: Ice - (28)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1064376634
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1064376633}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 257775233}
+  m_RootOrder: 45
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1064376635
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1064376633}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c78c35aff8a25b40b37b1835329427d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_NewLine: It just better be fun and challenging before it's over.
+  variableFieldType: 2
+  nameVar: {fileID: 2130334621}
+  characterName: ICE
 --- !u!1 &1066628591
 GameObject:
   m_ObjectHideFlags: 0
@@ -2291,6 +2799,51 @@ MonoBehaviour:
   variableFieldType: 0
   nameVar: {fileID: 2130334621}
   characterName: 
+--- !u!1 &1144061451
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1144061452}
+  - component: {fileID: 1144061453}
+  m_Layer: 0
+  m_Name: Ice - (26)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1144061452
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1144061451}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 257775233}
+  m_RootOrder: 41
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1144061453
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1144061451}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c78c35aff8a25b40b37b1835329427d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_NewLine: But if you want to come along, I wouldn't say no and leave you here out
+    in the cold. That'd damage my reputation.
+  variableFieldType: 2
+  nameVar: {fileID: 2130334621}
+  characterName: ICE
 --- !u!1 &1193667493
 GameObject:
   m_ObjectHideFlags: 0
@@ -2334,6 +2887,53 @@ MonoBehaviour:
   m_NewLine: And you are...?
   variableFieldType: 0
   nameVar: {fileID: 2130334621}
+  characterName: 
+--- !u!1 &1199209402
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1199209403}
+  - component: {fileID: 1199209404}
+  m_Layer: 0
+  m_Name: Player - (20)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1199209403
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1199209402}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 257775233}
+  m_RootOrder: 52
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1199209404
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1199209402}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c78c35aff8a25b40b37b1835329427d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_NewLine: She snaps her fingers and a book appears out of thin air. She places
+    her palm on the book before a giant gate appears slightly above the ground in
+    front of her. The wind began pushing me with such force I could hardly stand still,
+    yet she still stood firmly at the same spot.
+  variableFieldType: 1
+  nameVar: {fileID: 0}
   characterName: 
 --- !u!1 &1200739753
 GameObject:
@@ -2421,6 +3021,51 @@ MonoBehaviour:
   variableFieldType: 0
   nameVar: {fileID: 0}
   characterName: 
+--- !u!1 &1247858484
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1247858485}
+  - component: {fileID: 1247858486}
+  m_Layer: 0
+  m_Name: Ice - (33)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1247858485
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1247858484}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 257775233}
+  m_RootOrder: 55
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1247858486
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1247858484}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c78c35aff8a25b40b37b1835329427d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_NewLine: The choice is yours. I don't force people and I don't like to be forced.
+    Come if you like but be prepared for what you are getting yourself into.
+  variableFieldType: 2
+  nameVar: {fileID: 2130334621}
+  characterName: ICE
 --- !u!1 &1267527919
 GameObject:
   m_ObjectHideFlags: 0
@@ -2771,6 +3416,51 @@ MonoBehaviour:
   variableFieldType: 0
   nameVar: {fileID: 2130334621}
   characterName: 
+--- !u!1 &1305728280
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1305728281}
+  - component: {fileID: 1305728282}
+  m_Layer: 0
+  m_Name: Ice - (30)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1305728281
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1305728280}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 257775233}
+  m_RootOrder: 48
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1305728282
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1305728280}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c78c35aff8a25b40b37b1835329427d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_NewLine: I'm sure you will be fine as long as you don't do anything stupid, like
+    for example, lying on the ground here.
+  variableFieldType: 2
+  nameVar: {fileID: 2130334621}
+  characterName: ICE
 --- !u!1 &1322288572
 GameObject:
   m_ObjectHideFlags: 0
@@ -2798,7 +3488,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1916367208}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1322288574
 MonoBehaviour:
@@ -2842,7 +3532,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1916367208}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1325436346
 MonoBehaviour:
@@ -2904,6 +3594,51 @@ MonoBehaviour:
   variableFieldType: 0
   nameVar: {fileID: 2130334621}
   characterName: 
+--- !u!1 &1349938047
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1349938048}
+  - component: {fileID: 1349938049}
+  m_Layer: 0
+  m_Name: Display Choice
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1349938048
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1349938047}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 257775233}
+  m_RootOrder: 60
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1349938049
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1349938047}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2df485af3d2b27643aad53ba7060b620, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Choices:
+  - line: I guess when life gives you lemons, you just take them along with you.
+    decisionCommand: {fileID: 0}
+  - line: Ah! What have I gotten myself into!
+    decisionCommand: {fileID: 0}
 --- !u!1 &1351212932
 GameObject:
   m_ObjectHideFlags: 0
@@ -2931,7 +3666,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1916367208}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1351212934
 MonoBehaviour:
@@ -2946,6 +3681,50 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_NewBackground: {fileID: 21300000, guid: de26c437eaa74724fbbee5e7474960ee, type: 3}
   m_FadeTime: 5
+--- !u!1 &1372127944
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1372127945}
+  - component: {fileID: 1372127946}
+  m_Layer: 0
+  m_Name: Ice - (32)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1372127945
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1372127944}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 257775233}
+  m_RootOrder: 54
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1372127946
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1372127944}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c78c35aff8a25b40b37b1835329427d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_NewLine: Listen!
+  variableFieldType: 2
+  nameVar: {fileID: 2130334621}
+  characterName: ICE
 --- !u!1 &1389719871
 GameObject:
   m_ObjectHideFlags: 0
@@ -3034,7 +3813,7 @@ Transform:
   - {fileID: 1389719872}
   - {fileID: 289847103}
   m_Father: {fileID: 673832909}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1404001002
 GameObject:
@@ -3063,7 +3842,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1916367208}
-  m_RootOrder: 30
+  m_RootOrder: 31
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1404001004
 MonoBehaviour:
@@ -3154,7 +3933,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1916367208}
-  m_RootOrder: 32
+  m_RootOrder: 33
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1412637804
 MonoBehaviour:
@@ -3259,6 +4038,50 @@ MonoBehaviour:
   variableFieldType: 0
   nameVar: {fileID: 0}
   characterName: 
+--- !u!1 &1453684570
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1453684571}
+  - component: {fileID: 1453684572}
+  m_Layer: 0
+  m_Name: Player - (16)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1453684571
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1453684570}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 257775233}
+  m_RootOrder: 39
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1453684572
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1453684570}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c78c35aff8a25b40b37b1835329427d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_NewLine: What about me?
+  variableFieldType: 0
+  nameVar: {fileID: 2130334621}
+  characterName: 
 --- !u!1 &1455684018
 GameObject:
   m_ObjectHideFlags: 0
@@ -3286,7 +4109,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1916367208}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1455684020
 MonoBehaviour:
@@ -3375,7 +4198,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1916367208}
-  m_RootOrder: 29
+  m_RootOrder: 30
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1474509002
 MonoBehaviour:
@@ -3392,6 +4215,96 @@ MonoBehaviour:
   variableFieldType: 0
   nameVar: {fileID: 0}
   characterName: 
+--- !u!1 &1499513381
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1499513382}
+  - component: {fileID: 1499513383}
+  m_Layer: 0
+  m_Name: Player - (19)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1499513382
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1499513381}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 257775233}
+  m_RootOrder: 49
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1499513383
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1499513381}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c78c35aff8a25b40b37b1835329427d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_NewLine: So are you going to say Alohomora or something like that?
+  variableFieldType: 0
+  nameVar: {fileID: 2130334621}
+  characterName: 
+--- !u!1 &1507436451
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1507436452}
+  - component: {fileID: 1507436453}
+  m_Layer: 0
+  m_Name: Ice - (24)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1507436452
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1507436451}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 257775233}
+  m_RootOrder: 38
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1507436453
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1507436451}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c78c35aff8a25b40b37b1835329427d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_NewLine: The spell won't take me back home and neither will it do for you. The
+    only chance I have is to complete my assignment, by then which it will give me
+    clues to my way home.
+  variableFieldType: 2
+  nameVar: {fileID: 2130334621}
+  characterName: ICE
 --- !u!1 &1523004031
 GameObject:
   m_ObjectHideFlags: 0
@@ -3419,7 +4332,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1916367208}
-  m_RootOrder: 16
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1523004033
 MonoBehaviour:
@@ -3611,6 +4524,97 @@ MonoBehaviour:
   variableFieldType: 2
   nameVar: {fileID: 2130334621}
   characterName: ???
+--- !u!1 &1625267949
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1625267950}
+  - component: {fileID: 1625267951}
+  m_Layer: 0
+  m_Name: Player - (18)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1625267950
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1625267949}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 257775233}
+  m_RootOrder: 46
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1625267951
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1625267949}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c78c35aff8a25b40b37b1835329427d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_NewLine: "Oh lord, I've been wanting to take some days off, but I never asked
+    for this kind of vacation. Even if I do, I\u2019d never want to go to a place
+    named Ebola."
+  variableFieldType: 0
+  nameVar: {fileID: 2130334621}
+  characterName: 
+--- !u!1 &1665698295
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1665698296}
+  - component: {fileID: 1665698297}
+  m_Layer: 0
+  m_Name: Ice - (25)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1665698296
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1665698295}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 257775233}
+  m_RootOrder: 40
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1665698297
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1665698295}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c78c35aff8a25b40b37b1835329427d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_NewLine: "What do you mean what about you? I might look blue but I ain\u2019t
+    no Genie in a bottle, nor I ever been in one."
+  variableFieldType: 2
+  nameVar: {fileID: 2130334621}
+  characterName: ICE
 --- !u!1 &1684768155
 GameObject:
   m_ObjectHideFlags: 0
@@ -3724,7 +4728,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1916367208}
-  m_RootOrder: 18
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1728861995
 MonoBehaviour:
@@ -3768,7 +4772,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1916367208}
-  m_RootOrder: 25
+  m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1735121503
 MonoBehaviour:
@@ -3812,7 +4816,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1916367208}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1744595696
 MonoBehaviour:
@@ -3915,6 +4919,93 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_NewBackground: {fileID: 21300000, guid: b52c1505912dc02478a1494e4017acd8, type: 3}
+  m_FadeTime: 5
+--- !u!1 &1817800922
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1817800923}
+  - component: {fileID: 1817800924}
+  m_Layer: 0
+  m_Name: Ice - (27)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1817800923
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1817800922}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 257775233}
+  m_RootOrder: 44
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1817800924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1817800922}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c78c35aff8a25b40b37b1835329427d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_NewLine: Who knows! I am the first student to take on this assignment. If someone
+    can write a pamphlet about it, that means there must be a way out.
+  variableFieldType: 2
+  nameVar: {fileID: 2130334621}
+  characterName: ICE
+--- !u!1 &1863010942
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1863010943}
+  - component: {fileID: 1863010944}
+  m_Layer: 0
+  m_Name: ICE SHRUGS
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1863010943
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1863010942}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 257775233}
+  m_RootOrder: 43
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1863010944
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1863010942}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 556ae79d57f57a543b48e896cbd4a0b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_NewBackground: {fileID: 21300000, guid: 7f9a8ae1f215bfd44b534f32ac8537dd, type: 3}
   m_FadeTime: 5
 --- !u!1 &1889471662
 GameObject:
@@ -4027,6 +5118,7 @@ Transform:
   m_LocalPosition: {x: -45, y: -643, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 605822741}
   - {fileID: 67436609}
   - {fileID: 430232975}
   - {fileID: 684719537}
@@ -4062,8 +5154,52 @@ Transform:
   - {fileID: 1412637803}
   - {fileID: 2081364216}
   m_Father: {fileID: 673832909}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1933543812
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1933543813}
+  - component: {fileID: 1933543814}
+  m_Layer: 0
+  m_Name: Player - (17)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1933543813
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1933543812}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 257775233}
+  m_RootOrder: 42
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1933543814
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1933543812}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c78c35aff8a25b40b37b1835329427d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_NewLine: Is it going to take long?
+  variableFieldType: 0
+  nameVar: {fileID: 2130334621}
+  characterName: 
 --- !u!1 &1952421292
 GameObject:
   m_ObjectHideFlags: 0
@@ -4208,7 +5344,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1916367208}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2002444983
 MonoBehaviour:
@@ -4295,7 +5431,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1916367208}
-  m_RootOrder: 19
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2037774805
 MonoBehaviour:
@@ -4339,7 +5475,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1916367208}
-  m_RootOrder: 33
+  m_RootOrder: 34
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2081364217
 MonoBehaviour:
@@ -4425,3 +5561,49 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d4fac920e292824b8b9f9a82032ec45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &2135195412
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 2135195413}
+  - component: {fileID: 2135195414}
+  m_Layer: 0
+  m_Name: Ice - (34)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2135195413
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2135195412}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 257775233}
+  m_RootOrder: 56
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2135195414
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2135195412}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c78c35aff8a25b40b37b1835329427d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_NewLine: You are the only one who will face the consequences of your own actions.
+    To be honest, it would be nice to have an assistant for this assignment, but I
+    can't tell if you're up for it yet.
+  variableFieldType: 2
+  nameVar: {fileID: 2130334621}
+  characterName: ICE

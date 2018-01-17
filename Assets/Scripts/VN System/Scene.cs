@@ -3,6 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 namespace Logic
 {
+    [System.Serializable]
+    public class CommandBlock
+    {
+        public string blockTitle = "";
+        public Command[] commands;
+    }
     /// <summary>
     /// Script in charge of handling commands for one scene
     /// </summary>
@@ -18,7 +24,7 @@ namespace Logic
         /// Commands on this scene
         /// </summary>
         [SerializeField]
-        private Command[] m_Commands = null;
+        private CommandBlock[] m_CommandBlock = null;
 
         [SerializeField]
         private float m_DelayAtStart = 1f;
@@ -61,18 +67,24 @@ namespace Logic
         {
             yield return new WaitForSeconds(m_DelayAtStart);
             Status commandStatus = Status.Error;
-            // iterate through commands
-            for(int comIndex =0; comIndex < m_Commands.Length; comIndex++)
+            // iterate through blocks
+            Command[] commands;
+            for (int bIndex = 0; bIndex < m_CommandBlock.Length; bIndex++)
             {
-                m_Commands[comIndex].Enter();
-                m_Commands[comIndex].Execute(ref commandStatus);
-                // check if it should continue running
-                while(commandStatus == Status.Continue)
+                commands = m_CommandBlock[bIndex].commands;
+                // iterate through commands
+                for (int comIndex = 0; comIndex < commands.Length; comIndex++)
                 {
-                    yield return null;
-                    m_Commands[comIndex].Execute(ref commandStatus);
+                    commands[comIndex].Enter();
+                    commands[comIndex].Execute(ref commandStatus);
+                    // check if it should continue running
+                    while (commandStatus == Status.Continue)
+                    {
+                        yield return null;
+                        commands[comIndex].Execute(ref commandStatus);
+                    }
+                    commands[comIndex].Exit();
                 }
-                m_Commands[comIndex].Exit();
             }
         }
         
