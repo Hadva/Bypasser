@@ -778,7 +778,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 556ae79d57f57a543b48e896cbd4a0b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_NewBackground: {fileID: 21300000, guid: 4d1df01aefff34449a01c04647c4a5d3, type: 3}
+  m_NewBackground: {fileID: 21300000, guid: 7bf32636bfc30e04e9ba21f1c800f2ac, type: 3}
   m_FadeTime: 5
 --- !u!1 &308906481
 GameObject:
@@ -2349,7 +2349,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 556ae79d57f57a543b48e896cbd4a0b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_NewBackground: {fileID: 21300000, guid: 4d1df01aefff34449a01c04647c4a5d3, type: 3}
+  m_NewBackground: {fileID: 21300000, guid: 7bf32636bfc30e04e9ba21f1c800f2ac, type: 3}
   m_FadeTime: 5
 --- !u!1 &985630908
 GameObject:
@@ -4478,7 +4478,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 556ae79d57f57a543b48e896cbd4a0b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_NewBackground: {fileID: 21300000, guid: 4d1df01aefff34449a01c04647c4a5d3, type: 3}
+  m_NewBackground: {fileID: 21300000, guid: 7bf32636bfc30e04e9ba21f1c800f2ac, type: 3}
   m_FadeTime: 5
 --- !u!1 &1584283968
 GameObject:
