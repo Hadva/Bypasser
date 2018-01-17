@@ -39,8 +39,9 @@ namespace Logic
     /// </summary>
     public class DisplayManager : MonoBehaviour
     {
-        public System.Action onNextLine = null;
+        public System.Action onNextLine = null;       
         public System.Action<int> onChoiceSelected = null;
+        public System.Action onBackgroundFadeEnd = null;
 
         private const string PLAYER_NAME_REPLACE = "$playerName";
         /// <summary>
@@ -183,9 +184,42 @@ namespace Logic
         /// <summary>
         /// Set main background of display
         /// </summary>     
-        public void SetMainBackground(Sprite newBackground)
+        public void SetMainBackground(Sprite newBackground, float fadeTime)
         {
+            if (fadeTime > 0)
+            {
+                StartCoroutine(FadeToNewBackground(newBackground, fadeTime));
+            }
+            else
+            {
+                m_MainBackground.sprite = newBackground;
+            }
+        }
+
+        private IEnumerator FadeToNewBackground(Sprite newBackground, float fadeTime)
+        {
+            float splitTime = fadeTime * 0.5f;
+            float elapsed = 0;
+            // Fade out current background to black
+            while(elapsed < splitTime)
+            {
+                m_MainBackground.color = Color.Lerp(Color.white, Color.black, elapsed / splitTime);
+                elapsed += Time.fixedDeltaTime;
+                yield return null;
+            }
             m_MainBackground.sprite = newBackground;
+            elapsed = 0;
+            while (elapsed < splitTime)
+            {
+                m_MainBackground.color = Color.Lerp(Color.black, Color.white, elapsed / splitTime);
+                elapsed += Time.fixedDeltaTime;
+                yield return null;
+            }
+            // fire on background fade end
+            if(onBackgroundFadeEnd != null)
+            {
+                onBackgroundFadeEnd();
+            }
         }
 
         /// <summary>

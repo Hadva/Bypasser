@@ -10,6 +10,7 @@ namespace Logic
     {
         Local = 0,
         Global = 1,
+        Constant
     }
 
     /// <summary>

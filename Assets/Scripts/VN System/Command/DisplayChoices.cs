@@ -8,8 +8,6 @@ namespace Logic
         [SerializeField]
         private Choice[] m_Choices;
 
-        private Status m_Status = Status.Continue;
-
         public override void Enter()
         {
             m_Status = Status.Continue;
@@ -38,12 +36,6 @@ namespace Logic
             {
                 m_Status = Status.Success;
             }
-        }
-
-        private void Continue()
-        {
-            m_Status = Status.Success;
-        }
-
+        }   
     }
 }

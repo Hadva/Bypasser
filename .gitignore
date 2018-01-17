@@ -4,3 +4,4 @@ Visual_Novel.sln
 Visual_Novel.csproj
 Visual_Novel.Plugins.csproj
 Visual_Novel.Editor.Plugins.csproj
+Builds/

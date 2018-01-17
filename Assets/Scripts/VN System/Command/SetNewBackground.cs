@@ -15,10 +15,24 @@ namespace Logic
         [SerializeField]
         private Sprite m_NewBackground = null;
 
+        /// <summary>
+        /// time it will take to fade into new image
+        /// </summary>
+        [SerializeField]
+        private float m_FadeTime = 5f;
+
+        public override void Enter()
+        {           
+            DisplayManager.instance.SetMainBackground(m_NewBackground, m_FadeTime);
+            if (m_FadeTime > 0)
+            {
+                m_Status = Status.Continue;
+                DisplayManager.instance.onBackgroundFadeEnd = Continue;
+            }
+        }
         protected override Status UpdateNode()
         {
-            DisplayManager.instance.SetMainBackground(m_NewBackground);
-            return Status.Success;
-        }
+            return m_Status;
+        }       
     }
 }
