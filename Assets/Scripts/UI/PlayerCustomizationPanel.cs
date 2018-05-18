@@ -2,28 +2,20 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using Logic.Gameplay;
 namespace Logic.UI
 {
     public class PlayerCustomizationPanel : MonoBehaviour
     {
         private const int PLAYERCHARNUMBER = 3;
-        /// <summary>
-        /// Used to define gender option
-        /// </summary>
-        public enum eGenderOption
+        public static System.Action onNameChanged = null;
+        public static System.Action onGenderSelected = null;
+
+        public static PlayerCustomizationPanel Instance
         {
-            He = 0,
-            She,
-            They,
-            Custom
-        }
-        #region Fields
-        /// <summary>
-        /// Scene to load after customization is done
-        /// </summary>
-        [SerializeField]
-        private string m_LoadSceneAfterCustomization = null;
+            get;
+            protected set;
+        }    
+        #region Fields    
 
         [Header("Name Input")]
         /// <summary>
@@ -59,25 +51,21 @@ namespace Logic.UI
         [SerializeField]
         private GameObject m_InvalidNamePanel = null;
 
-        [Header("Gender Selection")]
-        /// <summary>
-        /// Id of variabel to store gender 
-        /// </summary>
-        [SerializeField]
-        private string m_GenderNameVarId = "";
-   
+        [Header("Gender Selection")]   
         /// <summary>
         /// Reference to pronoun selection panel
         /// </summary>
         [SerializeField]
         private GameObject m_PronounSelectionPanel = null;
+        #endregion
 
         /// <summary>
-        /// Reference to custom pronoun panel
+        /// Toggle name panel
         /// </summary>
-        [SerializeField]
-        private GameObject m_CustomPronounPanel = null;
-        #endregion
+        public void ToggleNamePanel(bool enabled)
+        {
+            m_NamePanel.SetActive(enabled);
+        }
 
         /// <summary>
         /// Set player name
@@ -104,38 +92,45 @@ namespace Logic.UI
             m_ConfirmNamePanel.SetActive(false);
             m_NamePanel.SetActive(false);
             GlobalVariables.GetVariable<string>(m_PlayerNameVarId).value = m_PlayerNameField.text;
-            GameManager.instance.SetPlayerName(m_PlayerNameField.text);
-            GameManager.LoadScene(m_LoadSceneAfterCustomization);
+            GameManager.instance.SetPlayerName(m_PlayerNameField.text);  
+            if(onNameChanged != null)
+            {
+                onNameChanged();
+                onNameChanged = null;
+            }
+        }
+
+        /// <summary>
+        /// Toggle gender option panel
+        /// </summary>
+        public void ToggleGenderOptionPanel(bool enabled)
+        {
+            m_PronounSelectionPanel.SetActive(enabled);
         }
 
         /// <summary>
         /// Set player's gender option
         /// </summary>
-        public void SetGenderOption(eGenderOption genderOption)
+        public void SetGenderOption(int genderOption)
         {
-            switch(genderOption)
+            GameManager.instance.SetPlayerGender((GenderOption)genderOption);
+            ToggleGenderOptionPanel(false);
+            if(onGenderSelected != null)
             {
-                case eGenderOption.He:
-                    SetCustomGender("He");
-                    break;
-
-                case eGenderOption.She:
-                    SetCustomGender("She");
-                    break;
-
-                case eGenderOption.They:
-                    SetCustomGender("They");
-                    break;
-
-                default:
-                    SetCustomGender("He");
-                    break;
+                onGenderSelected();
             }
         }
 
-        public void SetCustomGender(string gender)
+        #region UNITY_FUNCTIONS
+        private void Awake()
         {
-
-        }       
+            if(Instance != null)
+            {
+                Destroy(this.gameObject);
+                return;
+            }
+            Instance = this;
+        }
+        #endregion
     }
 }

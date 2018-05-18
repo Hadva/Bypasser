@@ -3,13 +3,25 @@ using System.Collections.Generic;
 using UnityEngine;
 using Logic.Utilities;
 using UnityEngine.SceneManagement;
-namespace Logic.Gameplay
+namespace Logic
 {
+    /// <summary>
+    /// Used to define gender option
+    /// </summary>
+    public enum GenderOption
+    {
+        He = 0,
+        She,
+        They,
+        Custom
+    }
+
     /// <summary>
     /// Script in charge of handling major tasks of game. Loading/Saving/Transitions
     /// </summary>
     public class GameManager : MonoBehaviour
-    {
+    {        
+
         /// <summary>
         /// Obtain instance of game manager
         /// </summary>
@@ -61,6 +73,11 @@ namespace Logic.Gameplay
         public void SetPlayerName(string playerName)
         {
             m_Save.chaptersSave[m_Save.lastSaveSlotPlayed].playerName = playerName;
+        }
+
+        public void SetPlayerGender(GenderOption genderSelected)
+        {
+            m_Save.chaptersSave[m_Save.lastSaveSlotPlayed].gender = genderSelected;
         }
 
         /// <summary>

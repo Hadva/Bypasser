@@ -32,6 +32,11 @@ namespace Logic
         public string playerName;
 
         /// <summary>
+        /// Saved gender option
+        /// </summary>
+        public GenderOption gender;
+
+        /// <summary>
         /// Name of chapter saved
         /// </summary>
         public string chapterName;

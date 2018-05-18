@@ -37,25 +37,25 @@ namespace Logic
         private void Start()
         {
             m_DisplayManager = DisplayManager.instance;
-            m_DisplayManager.currentScene = this;
+            m_DisplayManager.SetCurrentScene(this);
             StartCoroutine("RunCommands");
         }
 
         /// <summary>
         /// Get characters in this scene
         /// </summary>
-        public List<Character> GetCharacters(RectTransform charactersPivot)
-        {          
+        public Dictionary<string,Character> GetCharacters(RectTransform charactersPivot)
+        {
             // create new list
-            List<Character> characterInstances = new List<Character>();
+            Dictionary<string, Character> characterInstances = new Dictionary<string, Character>();
             Character newCharacter = null;
             for(int cIndex = 0; cIndex < m_Characters.Length; cIndex++)
             {
                 newCharacter = GameObject.Instantiate(m_Characters[cIndex]);
                 newCharacter.rectTransform.SetParent(charactersPivot);
-                newCharacter.rectTransform.localScale = new Vector3(0, 0, 0);
-                newCharacter.gameObject.SetActive(false);
-                characterInstances.Add(newCharacter);
+                newCharacter.rectTransform.localPosition = Vector3.zero;
+                newCharacter.rectTransform.localScale = new Vector3(1, 1, 1);               
+                characterInstances.Add(newCharacter.CharacterName,newCharacter);
             }
             return characterInstances;            
         }

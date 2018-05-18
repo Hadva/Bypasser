@@ -42,10 +42,21 @@ namespace Logic
             }
         }
 
+
         private void Awake()
         {
             m_Animator = GetComponent<Animator>();
             m_RectTransform = GetComponent<RectTransform>();
+        }
+
+        public void Enter()
+        {          
+            SetAnimationTrigger(m_EntryAnimationName);
+        }
+
+        public void Exit()
+        {
+            SetAnimationTrigger(m_ExitAnimationName);
         }
 
         /// <summary>

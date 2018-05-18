@@ -8,9 +8,5 @@ namespace Logic
     /// </summary>
     public abstract class Condition : EventNode
     {
-    #if UNITY_EDITOR
-        [SerializeField]
-        private string m_Description = "NewCondition";
-    #endif
     }
 }

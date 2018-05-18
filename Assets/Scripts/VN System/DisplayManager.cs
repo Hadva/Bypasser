@@ -39,11 +39,12 @@ namespace Logic
     /// </summary>
     public class DisplayManager : MonoBehaviour
     {
-        public System.Action onNextLine = null;       
+        public System.Action onNextLine = null;
         public System.Action<int> onChoiceSelected = null;
         public System.Action onBackgroundFadeEnd = null;
 
         private const string PLAYER_NAME_REPLACE = "$playerName";
+        private const string PLAYER_GENDER_REPLACE = "$pronoun";
         /// <summary>
         /// Single reference of Display Manager
         /// </summary>
@@ -66,7 +67,7 @@ namespace Logic
         [SerializeField]
         private GameObject m_DialogueDisplay = null;
         [SerializeField]
-        private Image m_BoxBackground = null;       
+        private Image m_BoxBackground = null;
         [SerializeField]
         private Text m_TextDisplay = null;
         [SerializeField]
@@ -92,23 +93,24 @@ namespace Logic
         [Header("Input")]
         [SerializeField]
         private string m_NextLineInput = "Space";
+        private float m_DisplaySpeed = 0.016f;
         /// <summary>
         /// Current scene 
         /// </summary>
         public Scene currentScene
         {
-            set;
-            protected get;
+            protected set;
+            get;
         }
 
         private Transform m_CameraTransform = null;
         private Vector3 m_InitialLocalPosition = Vector3.zero;
-        private Animator m_CharacterDisplayanimator = null; 
-        
+        private Animator m_CharacterDisplayanimator = null;
+        private bool m_IsReading = false;
         /// <summary>
         /// List of characters displays
         /// </summary>
-        private List<Character> m_CharactersDisplay = null;
+        private Dictionary<string, Character> m_CharactersDisplay = null;
 
         /// <summary>
         /// Create instance of singleton
@@ -116,7 +118,7 @@ namespace Logic
         private void Awake()
         {
             // ensure there's only one instance
-            if(instance == null)
+            if (instance == null)
             {
                 instance = this;
             }
@@ -140,9 +142,16 @@ namespace Logic
         /// </summary>
         private void Update()
         {
-            if(Input.GetButtonDown(m_NextLineInput))
+            if (Input.GetButtonDown(m_NextLineInput))
             {
-                NextLine();
+                if (m_IsReading)
+                {
+                    m_DisplaySpeed = 0;
+                }
+                else
+                {
+                    NextLine();
+                }
             }
         }
 
@@ -151,7 +160,7 @@ namespace Logic
         /// </summary>
         public void NextLine()
         {
-            if(onNextLine != null)
+            if (onNextLine != null)
             {
                 onNextLine();
                 onNextLine = null;
@@ -163,17 +172,12 @@ namespace Logic
         /// </summary>
         public void SetCurrentScene(Scene newScene)
         {
-            // check if list of characters is null
-            if(m_CharactersDisplay == null)
-            {
-                m_CharactersDisplay = new List<Character>();
-            }
             // check if there's any previous characters
-            else if(m_CharactersDisplay.Count == 0)
+            if (m_CharactersDisplay != null && m_CharactersDisplay.Count != 0)
             {
-                for(int cIndex = 0; cIndex < m_CharactersDisplay.Count; cIndex++)
+                foreach (KeyValuePair<string, Character> charDisplay in m_CharactersDisplay)
                 {
-                    Destroy(m_CharactersDisplay[cIndex].gameObject);
+                    Destroy(charDisplay.Value.gameObject);
                 }
             }
             // obtain instances of characters in this scene
@@ -193,6 +197,18 @@ namespace Logic
             else
             {
                 m_MainBackground.sprite = newBackground;
+            }
+        }
+
+        public void SetBackgroundColor(Color newColor, float fadeTime)
+        {
+            if(fadeTime > 0)
+            {
+                StartCoroutine(FadeToNewBackground(newColor, fadeTime));
+            }
+            else
+            {
+                m_MainBackground.color = newColor;
             }
         }
 
@@ -222,6 +238,19 @@ namespace Logic
             }
         }
 
+        private IEnumerator FadeToNewBackground(Color newColor, float fadeTime)
+        {
+            float elapsed = 0;
+            Color currentColor = m_MainBackground.color;
+            // Fade out current background to black
+            while (elapsed < fadeTime)
+            {
+                m_MainBackground.color = Color.Lerp(currentColor, newColor, elapsed / fadeTime);
+                elapsed += Time.fixedDeltaTime;
+                yield return null;
+            }
+        }
+
         /// <summary>
         /// Set text box background
         /// </summary>      
@@ -235,7 +264,7 @@ namespace Logic
         /// </summary>
         public void AddCharacter(string characterName)
         {
-
+            m_CharactersDisplay[characterName].Enter();
         }
 
         /// <summary>
@@ -243,7 +272,7 @@ namespace Logic
         /// </summary>
         public void RemoveCharacter(string characterName)
         {
-
+            m_CharactersDisplay[characterName].Exit();
         }
 
         /// <summary>
@@ -269,6 +298,7 @@ namespace Logic
         public void DisplayNewLine(string newLine)
         {
             m_TextDisplay.text = string.Empty;
+            m_DisplaySpeed = 0.016f;
             StartCoroutine("DisplayLine", newLine);
         }
 
@@ -292,19 +322,25 @@ namespace Logic
         /// Display line of text as text typer
         /// </summary>
         private IEnumerator DisplayLine(string newLine)
-        {                 
-            
-            int currentCharacter = 0;
+        {
+            m_IsReading = true;
+            int currentCharacter = 0;            
             // replace playername 
             newLine = newLine.Replace(PLAYER_NAME_REPLACE, m_PlayerName.value);
             // set character count
-            int characterCount = newLine.Length;
+            int characterCount = newLine.Length;  
             // display characters
             while (currentCharacter < characterCount)
             {             
                 m_TextDisplay.text += newLine[currentCharacter++];
-                yield return new WaitForSeconds(0.016f);
-            }            
+                if (m_DisplaySpeed > 0)
+                {
+                    yield return new WaitForSecondsRealtime(m_DisplaySpeed);
+                }
+                               
+            }
+            m_TextDisplay.text = newLine;
+            m_IsReading = false;
         }   
 
         public void DisplayChoices(Choice[] choices)
