@@ -12,8 +12,5 @@ EditorBuildSettings:
     path: Assets/Scenes/Customization Screen.unity
     guid: c490d1e5c1d31a14f89d6eb32ce8aa7d
   - enabled: 1
-    path: Assets/Scenes/Prologue.unity
-    guid: cf5ecf19ba6c67d459c17ec5ef5721d5
-  - enabled: 1
-    path: Assets/Scenes/ToBeContinued.unity
-    guid: d228431beb7ca114ca4760f1bfc8cb25
+    path: Assets/Scenes/Script 1.unity
+    guid: b7b882f2327d0954686bb5b803835af1

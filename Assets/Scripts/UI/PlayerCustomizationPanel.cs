@@ -92,7 +92,7 @@ namespace Logic.UI
             m_ConfirmNamePanel.SetActive(false);
             m_NamePanel.SetActive(false);
             GlobalVariables.GetVariable<string>(m_PlayerNameVarId).value = m_PlayerNameField.text;
-            GameManager.instance.SetPlayerName(m_PlayerNameField.text);  
+            GameManager.Instance.SetPlayerName(m_PlayerNameField.text);  
             if(onNameChanged != null)
             {
                 onNameChanged();
@@ -113,7 +113,7 @@ namespace Logic.UI
         /// </summary>
         public void SetGenderOption(int genderOption)
         {
-            GameManager.instance.SetPlayerGender((GenderOption)genderOption);
+            GameManager.Instance.SetPlayerGender((GenderOption)genderOption);
             ToggleGenderOptionPanel(false);
             if(onGenderSelected != null)
             {

@@ -72,7 +72,14 @@ namespace Logic
         {
             if(m_GlobalVariable)
             {
-                GlobalVariables.Add(id, this);              
+                if(!GlobalVariables.IsRegistered(id))
+                {
+                    GlobalVariables.Add(id, this);
+                }
+                else
+                {
+                    value = GlobalVariables.GetVariable<T>(id).value;
+                }
             }
         }
 

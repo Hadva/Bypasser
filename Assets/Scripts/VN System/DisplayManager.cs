@@ -42,9 +42,7 @@ namespace Logic
         public System.Action onNextLine = null;
         public System.Action<int> onChoiceSelected = null;
         public System.Action onBackgroundFadeEnd = null;
-
-        private const string PLAYER_NAME_REPLACE = "$playerName";
-        private const string PLAYER_GENDER_REPLACE = "$pronoun";
+     
         /// <summary>
         /// Single reference of Display Manager
         /// </summary>
@@ -54,14 +52,12 @@ namespace Logic
             protected set;
         }
 
-        [Header("Display Fields")]
-        [SerializeField]
-        private Camera m_MainCamera = null;
+        [Header("Display Fields")]     
         [SerializeField]
         private Image m_MainBackground = null;
         [SerializeField]
         private RectTransform m_CharacterLayer = null;
-        [SerializeField]
+
         private StringVar m_PlayerName = null;
         [Header("Dialogue Display")]
         [SerializeField]
@@ -133,6 +129,7 @@ namespace Logic
         /// </summary>
         private void Start()
         {
+            m_PlayerName = (StringVar)GlobalVariables.GetVariable<string>(GameManager.Instance.playerNameId);
             m_CameraTransform = this.transform;
             m_InitialLocalPosition = m_CameraTransform.localPosition;
         }
@@ -326,7 +323,7 @@ namespace Logic
             m_IsReading = true;
             int currentCharacter = 0;            
             // replace playername 
-            newLine = newLine.Replace(PLAYER_NAME_REPLACE, m_PlayerName.value);
+            newLine = newLine.Replace(GameManager.PLAYER_NAME_REPLACE, m_PlayerName.value);
             // set character count
             int characterCount = newLine.Length;  
             // display characters

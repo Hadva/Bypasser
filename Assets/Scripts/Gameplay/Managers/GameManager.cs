@@ -20,12 +20,14 @@ namespace Logic
     /// Script in charge of handling major tasks of game. Loading/Saving/Transitions
     /// </summary>
     public class GameManager : MonoBehaviour
-    {        
+    {
+        public const string PLAYER_NAME_REPLACE = "$playerName";
+        public const string PLAYER_GENDER_REPLACE = "$pronoun";
 
         /// <summary>
         /// Obtain instance of game manager
         /// </summary>
-        public static GameManager instance
+        public static GameManager Instance
         {
             get;
             protected set;
@@ -51,21 +53,20 @@ namespace Logic
         private PlayerSave m_Save = null;
 
         /// <summary>
+        /// Main camera in game
+        /// </summary>
+        public Camera mainCamera = null;
+
+        /// <summary>
         /// Id of player name
         /// </summary>
         [SerializeField]
-        private string m_PlayerNameVarId = "PlayerName";
+        public string playerNameId = "PlayerName";
 
         /// <summary>
         /// Reference to player name var
         /// </summary>
         private StringVar m_PlayerNameVar = null;
-
-        /// <summary>
-        /// Scene to load
-        /// </summary>
-        [SerializeField]
-        private string m_SceneToLoadAtStart = "";    
            
         /// <summary>
         /// Set player name
@@ -73,6 +74,14 @@ namespace Logic
         public void SetPlayerName(string playerName)
         {
             m_Save.chaptersSave[m_Save.lastSaveSlotPlayed].playerName = playerName;
+        }
+
+        /// <summary>
+        /// Get player name
+        /// </summary>
+        public string GetPlayerName()
+        {
+            return m_Save.chaptersSave[m_Save.lastSaveSlotPlayed].playerName;
         }
 
         public void SetPlayerGender(GenderOption genderSelected)
@@ -112,9 +121,9 @@ namespace Logic
         /// </summary>
         protected void Awake()
         {
-            if (instance == null)
+            if (Instance == null)
             {
-                instance = this;
+                Instance = this;
                 DontDestroyOnLoad(this.gameObject);
             }
             else
@@ -139,16 +148,15 @@ namespace Logic
         protected void Start()
         {
             // obtain player name var
-            m_PlayerNameVar = GlobalVariables.GetVariable<string>(m_PlayerNameVarId) as StringVar;
-            m_PlayerNameVar.value = m_Save.chaptersSave[m_Save.lastSaveSlotPlayed].playerName;
-            LoadScene(m_SceneToLoadAtStart);
+            m_PlayerNameVar = GlobalVariables.GetVariable<string>(playerNameId) as StringVar;
+            m_PlayerNameVar.value = m_Save.chaptersSave[m_Save.lastSaveSlotPlayed].playerName;            
         }
 
         /// <summary>
         /// Loads scene with provided name
         /// </summary>
         /// <param name="sceneName"></param>
-        public static void LoadScene(string sceneName)
+        public void LoadScene(string sceneName)
         {
             // load scene additive
             SceneManager.LoadScene(sceneName);

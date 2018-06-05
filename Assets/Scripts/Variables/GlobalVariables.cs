@@ -22,7 +22,15 @@ namespace Logic
         /// <param name="value">variable to store in dictionary</param>
         public static void Add<T>(string variableId, Variable<T> value)
         {
-            m_Variables.Add(variableId, value);
+           m_Variables.Add(variableId, value);                     
+        }
+
+        /// <summary>
+        /// check whether variable has been registered
+        /// </summary>   
+        public static bool IsRegistered(string variableId)
+        {
+            return m_Variables.ContainsKey(variableId);
         }
 
         /// <summary>

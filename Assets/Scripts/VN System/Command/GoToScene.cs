@@ -14,7 +14,7 @@ namespace Logic
 
         protected override Status UpdateNode()
         {
-            GameManager.LoadScene(m_SceneName);
+            GameManager.Instance.LoadScene(m_SceneName);
             return Status.Success;
         }
     }
