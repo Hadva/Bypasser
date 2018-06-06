@@ -10,7 +10,7 @@ namespace Logic
     public struct AnimationEvent
     {
         public string eventId;
-        public Action animEvent;
+        public EventNode animEvent;
     }
 
     /// <summary>
@@ -18,7 +18,7 @@ namespace Logic
     /// </summary>
     public class AnimationEventsController : MonoBehaviour
     {
-        private Dictionary<string, Action> m_RegisteredAnimEvents = null;
+        private Dictionary<string, EventNode> m_RegisteredAnimEvents = null;
 
         [SerializeField]
         private AnimationEvent[] m_AnimEvents;
@@ -29,7 +29,7 @@ namespace Logic
             {
                 return;
             }
-            m_RegisteredAnimEvents = new Dictionary<string, Action>();
+            m_RegisteredAnimEvents = new Dictionary<string, EventNode>();
             // register animation events
             for (int eIndex=0; eIndex< m_AnimEvents.Length; eIndex++)
             {

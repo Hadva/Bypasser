@@ -10,8 +10,6 @@ namespace Logic.UI
     [System.Serializable]
     public class CommentCard : MonoBehaviour
     {        
-        private GameObject m_CardPanel;
-
         [SerializeField]
         private Text userNameDisplay;
 
@@ -33,7 +31,7 @@ namespace Logic.UI
             userNameDisplay.text = commentInfo.userName;
             imageDisplay.sprite = commentInfo.userImage;
             commentDisplay.text = commentInfo.userComment;
-            m_CardPanel.SetActive(true);
+            gameObject.SetActive(true);
         }
 
         /// <summary>
@@ -44,12 +42,7 @@ namespace Logic.UI
             userNameDisplay.text = "";
             imageDisplay.sprite = null;
             commentDisplay.text = "";
-            m_CardPanel.SetActive(false);
-        }
-
-        private void Start()
-        {
-            m_CardPanel = this.gameObject;
-        }
+            gameObject.SetActive(false);
+        }      
     }
 }
