@@ -20,9 +20,12 @@ namespace Logic
         [SerializeField]
         private float m_FadeTime = 5f;
 
+        [SerializeField]
+        private bool m_ClearImage = false;
+
         public override void Enter()
         {
-            DisplayManager.instance.SetBackgroundColor(m_BackgroundColor, m_FadeTime);
+            DisplayManager.instance.SetBackgroundColor(m_BackgroundColor, m_FadeTime, m_ClearImage);
             if (m_FadeTime > 0)
             {
                 m_Status = Status.Continue;

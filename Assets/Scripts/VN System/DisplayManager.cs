@@ -197,14 +197,15 @@ namespace Logic
             }
         }
 
-        public void SetBackgroundColor(Color newColor, float fadeTime)
+        public void SetBackgroundColor(Color newColor, float fadeTime, bool clearImage)
         {
             if(fadeTime > 0)
             {
-                StartCoroutine(FadeToNewBackground(newColor, fadeTime));
+                StartCoroutine(FadeToNewBackground(newColor, fadeTime, clearImage));
             }
             else
             {
+                if (clearImage) m_MainBackground.sprite = null;
                 m_MainBackground.color = newColor;
             }
         }
@@ -235,9 +236,10 @@ namespace Logic
             }
         }
 
-        private IEnumerator FadeToNewBackground(Color newColor, float fadeTime)
+        private IEnumerator FadeToNewBackground(Color newColor, float fadeTime, bool clearImage)
         {
             float elapsed = 0;
+            if (clearImage) m_MainBackground.sprite = null;
             Color currentColor = m_MainBackground.color;
             // Fade out current background to black
             while (elapsed < fadeTime)
