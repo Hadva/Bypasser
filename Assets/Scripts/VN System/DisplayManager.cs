@@ -248,6 +248,11 @@ namespace Logic
                 elapsed += Time.fixedDeltaTime;
                 yield return null;
             }
+            // fire on background fade end
+            if (onBackgroundFadeEnd != null)
+            {
+                onBackgroundFadeEnd();
+            }
         }
 
         /// <summary>
@@ -296,6 +301,8 @@ namespace Logic
         /// </summary>
         public void DisplayNewLine(string newLine)
         {
+            // make sure to show display
+            if (!m_DialogueDisplay.activeSelf) ShowDialogueDisplay();
             m_TextDisplay.text = string.Empty;
             m_DisplaySpeed = 0.016f;
             StartCoroutine("DisplayLine", newLine);

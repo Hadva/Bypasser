@@ -21,8 +21,14 @@ namespace Logic
         /// <param name="variableId">id of the variable</param>
         /// <param name="value">variable to store in dictionary</param>
         public static void Add<T>(string variableId, Variable<T> value)
-        {
-           m_Variables.Add(variableId, value);                     
+        {           
+            if(m_Variables.ContainsKey(variableId))
+            {
+                Variable<T> variable = (Variable<T>) m_Variables[variableId];
+                value.value = variable.value;
+                return;
+            }
+            m_Variables.Add(variableId, value);                     
         }
 
         /// <summary>

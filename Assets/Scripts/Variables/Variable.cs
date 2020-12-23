@@ -46,6 +46,9 @@ namespace Logic
         [SerializeField]
         protected bool m_GlobalVariable = false;
 
+        [SerializeField]
+        protected bool m_RemoveOnDestroy = false;
+
         /// <summary>
         /// Value of this variable
         /// </summary>
@@ -71,15 +74,8 @@ namespace Logic
         private void Awake()
         {
             if(m_GlobalVariable)
-            {
-                if(!GlobalVariables.IsRegistered(id))
-                {
-                    GlobalVariables.Add(id, this);
-                }
-                else
-                {
-                    value = GlobalVariables.GetVariable<T>(id).value;
-                }
+            {               
+                GlobalVariables.Add(id, this);                
             }
         }
 
@@ -88,7 +84,7 @@ namespace Logic
         /// </summary>
         private void OnDestroy()
         {
-            if (m_GlobalVariable)
+            if (m_RemoveOnDestroy && m_GlobalVariable)
             {
                 GlobalVariables.Remove(id);
             }

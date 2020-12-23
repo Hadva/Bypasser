@@ -235,7 +235,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 53175473}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec6aa5d1ab5765347a49a836bd76a733, type: 3}
+  m_Script: {fileID: 11500000, guid: b30c3c633a234db4dad7b5e4e53812cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &85742145
@@ -1157,11 +1157,13 @@ MonoBehaviour:
     commands:
     - {fileID: 357894274}
     - {fileID: 34212890}
+    - {fileID: 53175475}
     - {fileID: 1349938049}
     - {fileID: 221428848}
     - {fileID: 1356589169}
     - {fileID: 1444111512}
     - {fileID: 363003021}
+    - {fileID: 53175475}
     - {fileID: 1308514310}
     - {fileID: 992213355}
     - {fileID: 1399734507}
@@ -1182,18 +1184,21 @@ MonoBehaviour:
     - {fileID: 1777723954}
     - {fileID: 1892796652}
     - {fileID: 201451757}
+    - {fileID: 53175475}
     - {fileID: 1636413081}
     - {fileID: 1293767062}
     - {fileID: 516399865}
     - {fileID: 1969554765}
     - {fileID: 311218947}
     - {fileID: 1220770132}
+    - {fileID: 53175475}
     - {fileID: 407789810}
     - {fileID: 824939607}
     - {fileID: 955714676}
     - {fileID: 332943435}
     - {fileID: 1740657666}
     - {fileID: 1026510645}
+    - {fileID: 53175475}
     - {fileID: 1534204102}
   m_DelayAtStart: 1
 --- !u!4 &673832909
@@ -3691,6 +3696,7 @@ MonoBehaviour:
   m_Id: PlayerName
   m_Value: 
   m_GlobalVariable: 1
+  m_RemoveOnDestroy: 0
 --- !u!1 &2132824747
 GameObject:
   m_ObjectHideFlags: 0

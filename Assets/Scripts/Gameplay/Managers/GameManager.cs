@@ -149,6 +149,8 @@ namespace Logic
         {
             // obtain player name var
             m_PlayerNameVar = GlobalVariables.GetVariable<string>(playerNameId) as StringVar;
+            if (m_PlayerNameVar == null)
+                return;
             m_PlayerNameVar.value = m_Save.chaptersSave[m_Save.lastSaveSlotPlayed].playerName;            
         }
 
