@@ -17,7 +17,7 @@ namespace Logic
 
         protected override Status UpdateNode()
         {
-            DisplayManager.instance.RemoveCharacter(m_CharacterName);
+            DisplayManager.instance.RemoveCharacter(m_CharacterName);        
             return Status.Success;
         }
     }

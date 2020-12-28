@@ -42,7 +42,7 @@ namespace Logic
         public System.Action onNextLine = null;
         public System.Action<int> onChoiceSelected = null;
         public System.Action onBackgroundFadeEnd = null;
-     
+        public System.Action onLastCharacterAnimationEnd = null;
         /// <summary>
         /// Single reference of Display Manager
         /// </summary>
@@ -57,7 +57,8 @@ namespace Logic
         private Image m_MainBackground = null;
         [SerializeField]
         private RectTransform m_CharacterLayer = null;
-
+        [SerializeField]
+        private RectTransform[] m_CharacterScreenPivots;
         private StringVar m_PlayerName = null;
         [Header("Dialogue Display")]
         [SerializeField]
@@ -266,8 +267,9 @@ namespace Logic
         /// <summary>
         /// Adds character on screen
         /// </summary>
-        public void AddCharacter(string characterName)
+        public void AddCharacter(string characterName, int position)
         {
+            m_CharactersDisplay[characterName].SetPivot(m_CharacterScreenPivots[position]);
             m_CharactersDisplay[characterName].Enter();
         }
 
@@ -275,8 +277,17 @@ namespace Logic
         /// Removes character from screen
         /// </summary>
         public void RemoveCharacter(string characterName)
-        {
+        {          
             m_CharactersDisplay[characterName].Exit();
+        }
+
+        public void CharacterAnimationEnd()
+        {
+            if (onLastCharacterAnimationEnd != null)
+            {
+                onLastCharacterAnimationEnd();
+                onLastCharacterAnimationEnd = null;
+            }
         }
 
         /// <summary>
@@ -410,6 +421,11 @@ namespace Logic
         {
             StartCoroutine(Shake(magnitude, duration, shakeMode));
         }     
+
+        public void CameraCloseUp(string characterName)
+        {
+            m_CharactersDisplay[characterName].CloseUp();
+        }
 
         /// <summary>
         /// Shake camera with given magnitude, duration and shake mode

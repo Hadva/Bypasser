@@ -30,7 +30,7 @@ namespace Logic
         private float m_DelayAtStart = 1f;
 
         private DisplayManager m_DisplayManager = null;
-
+        private Status m_CurrentStatus = Status.Error;
         /// <summary>
         /// Set current scene on display manager
         /// </summary>
@@ -65,8 +65,7 @@ namespace Logic
         /// </summary>
         private IEnumerator RunCommands()
         {
-            yield return new WaitForSeconds(m_DelayAtStart);
-            Status commandStatus = Status.Error;
+            yield return new WaitForSeconds(m_DelayAtStart);           
             // iterate through blocks
             Command[] commands;
             for (int bIndex = 0; bIndex < m_CommandBlock.Length; bIndex++)
@@ -76,12 +75,12 @@ namespace Logic
                 for (int comIndex = 0; comIndex < commands.Length; comIndex++)
                 {
                     commands[comIndex].Enter();
-                    commands[comIndex].Execute(ref commandStatus);
+                    commands[comIndex].Execute(ref m_CurrentStatus);
                     // check if it should continue running
-                    while (commandStatus == Status.Continue)
+                    while (m_CurrentStatus == Status.Continue)
                     {
                         yield return null;
-                        commands[comIndex].Execute(ref commandStatus);
+                        commands[comIndex].Execute(ref m_CurrentStatus);
                     }
                     commands[comIndex].Exit();
                 }

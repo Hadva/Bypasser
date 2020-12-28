@@ -26,6 +26,9 @@ namespace Logic
         [SerializeField]
         private string m_ExitAnimationName = "";
 
+        [SerializeField]
+        private string m_CloseUpAnimationName = "Close Up";
+
         private Animator m_Animator = null;
         /// <summary>
         /// Instance of rect transform of this character
@@ -50,7 +53,7 @@ namespace Logic
         }
 
         public void Enter()
-        {          
+        {
             SetAnimationTrigger(m_EntryAnimationName);
         }
 
@@ -58,6 +61,17 @@ namespace Logic
         {
             SetAnimationTrigger(m_ExitAnimationName);
         }
+
+        public void CloseUp()
+        {
+            SetAnimationTrigger(m_CloseUpAnimationName);
+        }
+
+        public void SetPivot(RectTransform newPivot)
+        {
+            m_RectTransform.SetParent(newPivot);
+            m_RectTransform.localScale = Vector3.one;
+        }           
 
         /// <summary>
         /// Set trigger for character animation
@@ -83,5 +97,10 @@ namespace Logic
                 m_Animator.SetBool(paramName, value);
             }
         }            
+
+        public void CharacterAnimationEnd()
+        {
+            DisplayManager.instance.CharacterAnimationEnd();
+        }
     }
 }

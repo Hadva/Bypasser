@@ -14,11 +14,20 @@ namespace Logic
         /// </summary>
         [SerializeField]
         private string m_CharacterName;
+        [SerializeField]
+        private int m_ScreenPosition = 0;
+
+        public override void Enter()
+        {
+            base.Enter();
+            DisplayManager.instance.AddCharacter(m_CharacterName, m_ScreenPosition);
+            DisplayManager.instance.onLastCharacterAnimationEnd = Continue;
+            m_Status = Status.Continue;
+        }
 
         protected override Status UpdateNode()
         {
-            DisplayManager.instance.AddCharacter(m_CharacterName);
-            return Status.Success;
+            return m_Status;
         }
     }
 }
