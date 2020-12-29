@@ -718,7 +718,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 556ae79d57f57a543b48e896cbd4a0b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_NewBackground: {fileID: 21300000, guid: bb27dbc1ac3fdfb4da2cb00f95e6304f, type: 3}
+  m_NewBackground: {fileID: 21300000, guid: 2737dd66396494e40bc690af46f5e3e5, type: 3}
   m_FadeTime: 0
 --- !u!1 &460173552
 GameObject:
@@ -1510,7 +1510,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 556ae79d57f57a543b48e896cbd4a0b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_NewBackground: {fileID: 21300000, guid: a2f1a396dcbc0f947beb87ccbadd6f27, type: 3}
+  m_NewBackground: {fileID: 21300000, guid: 95ef41a7d21cad341bb444e9d05afe6d, type: 3}
   m_FadeTime: 2
 --- !u!1 &1079373740
 GameObject:
@@ -1683,7 +1683,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 556ae79d57f57a543b48e896cbd4a0b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_NewBackground: {fileID: 21300000, guid: a2f1a396dcbc0f947beb87ccbadd6f27, type: 3}
+  m_NewBackground: {fileID: 21300000, guid: 95ef41a7d21cad341bb444e9d05afe6d, type: 3}
   m_FadeTime: 2
 --- !u!1 &1120592666
 GameObject:
@@ -2226,6 +2226,27 @@ PrefabInstance:
       propertyPath: m_Text
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 114884818729085018, guid: 58d6531f0c0ff2045b77b832d069f14b,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114884818729085018, guid: 58d6531f0c0ff2045b77b832d069f14b,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114884818729085018, guid: 58d6531f0c0ff2045b77b832d069f14b,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114884818729085018, guid: 58d6531f0c0ff2045b77b832d069f14b,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 79a3617a21306554b9a7a7f4c53835b3,
+        type: 3}
     - target: {fileID: 224028272150528836, guid: 58d6531f0c0ff2045b77b832d069f14b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3258,7 +3279,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 556ae79d57f57a543b48e896cbd4a0b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_NewBackground: {fileID: 21300000, guid: a2f1a396dcbc0f947beb87ccbadd6f27, type: 3}
+  m_NewBackground: {fileID: 21300000, guid: 95ef41a7d21cad341bb444e9d05afe6d, type: 3}
   m_FadeTime: 2
 --- !u!1 &1998915580
 GameObject:
