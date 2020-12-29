@@ -946,7 +946,6 @@ MonoBehaviour:
     - {fileID: 1336562323}
   - blockTitle: Part 6 - EXT. OUTSKIRT - DIMMED
     commands:
-    - {fileID: 1072486812}
     - {fileID: 1381204705}
     - {fileID: 1357342857}
     - {fileID: 1780164211}
@@ -1896,7 +1895,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 556ae79d57f57a543b48e896cbd4a0b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_NewBackground: {fileID: 21300000, guid: 1fb501ef413a72244a8899482e5b73c0, type: 3}
+  m_NewBackground: {fileID: 21300000, guid: 79a3617a21306554b9a7a7f4c53835b3, type: 3}
   m_FadeTime: 2
 --- !u!1 &1322288572
 GameObject:
@@ -2221,32 +2220,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Display Manager
       objectReference: {fileID: 0}
-    - target: {fileID: 114854038334560282, guid: 58d6531f0c0ff2045b77b832d069f14b,
-        type: 3}
-      propertyPath: m_Text
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 114884818729085018, guid: 58d6531f0c0ff2045b77b832d069f14b,
-        type: 3}
-      propertyPath: m_Color.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114884818729085018, guid: 58d6531f0c0ff2045b77b832d069f14b,
-        type: 3}
-      propertyPath: m_Color.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114884818729085018, guid: 58d6531f0c0ff2045b77b832d069f14b,
-        type: 3}
-      propertyPath: m_Color.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114884818729085018, guid: 58d6531f0c0ff2045b77b832d069f14b,
-        type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 79a3617a21306554b9a7a7f4c53835b3,
-        type: 3}
     - target: {fileID: 224028272150528836, guid: 58d6531f0c0ff2045b77b832d069f14b,
         type: 3}
       propertyPath: m_LocalPosition.x
