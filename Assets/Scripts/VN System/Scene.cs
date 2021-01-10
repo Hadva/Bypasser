@@ -17,17 +17,14 @@ namespace Logic
         /// <summary>
         /// List of characters on this scene
         /// </summary>
-        [SerializeField]
-        private Character[] m_Characters = null;   
+        [SerializeField] private Character[] m_Characters = null;
+        [SerializeField] private SpecialScene[] m_SpecialScenes = null;
 
         /// <summary>
         /// Commands on this scene
         /// </summary>
-        [SerializeField]
-        private CommandBlock[] m_CommandBlock = null;
-
-        [SerializeField]
-        private float m_DelayAtStart = 1f;
+        [SerializeField] private CommandBlock[] m_CommandBlock = null;
+        [SerializeField] private float m_DelayAtStart = 1f;
 
         private DisplayManager m_DisplayManager = null;
         private Status m_CurrentStatus = Status.Error;
@@ -58,6 +55,25 @@ namespace Logic
                 characterInstances.Add(newCharacter.CharacterName,newCharacter);
             }
             return characterInstances;            
+        }
+
+        /// <summary>
+        /// Get dictionary of special scenes included in this scene
+        /// </summary>
+        public Dictionary<string, SpecialScene> GetSpecialScenes(RectTransform scenesPivot)
+        {
+            // create new list
+            Dictionary<string, SpecialScene> scenes = new Dictionary<string, SpecialScene>();
+            SpecialScene newSpecialScene = null;
+            for (int sIndex = 0; sIndex < m_SpecialScenes.Length; sIndex++)
+            {
+                newSpecialScene = GameObject.Instantiate(m_SpecialScenes[sIndex]);
+                newSpecialScene.rectTransform.SetParent(scenesPivot);
+                newSpecialScene.rectTransform.localPosition = Vector3.zero;
+                newSpecialScene.rectTransform.localScale = new Vector3(1, 1, 1);
+                scenes.Add(newSpecialScene.SceneName, newSpecialScene);
+            }
+            return scenes;
         }
 
         /// <summary>

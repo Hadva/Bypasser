@@ -100,7 +100,7 @@ namespace Logic
 
         public void CharacterAnimationEnd()
         {
-            DisplayManager.instance.CharacterAnimationEnd();
+            DisplayManager.instance.AnimationEnd();
         }
     }
 }

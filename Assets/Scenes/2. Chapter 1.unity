@@ -481,7 +481,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 203818838}
-  m_RootOrder: 4
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &170318976
 MonoBehaviour:
@@ -526,9 +526,11 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1792051925}
   - {fileID: 2132443245}
+  - {fileID: 1792051925}
+  - {fileID: 900109908}
   - {fileID: 1713108763}
+  - {fileID: 1618138421}
   - {fileID: 1998915581}
   - {fileID: 170318975}
   - {fileID: 1789200628}
@@ -584,49 +586,6 @@ MonoBehaviour:
   variableFieldType: 2
   nameVar: {fileID: 0}
   characterName: 
---- !u!1 &360486900
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 360486901}
-  - component: {fileID: 360486902}
-  m_Layer: 0
-  m_Name: Hide Display
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &360486901
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 360486900}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1099214659}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &360486902
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 360486900}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b30c3c633a234db4dad7b5e4e53812cc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &416024964
 GameObject:
   m_ObjectHideFlags: 0
@@ -890,6 +849,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Characters:
   - {fileID: 114889853546439690, guid: ff5bc910b68dd324c8e096e3d317aef9, type: 3}
+  - {fileID: 114889853546439690, guid: af22f4d841fd4d1469bcc9d61c334adf, type: 3}
+  m_SpecialScenes:
+  - {fileID: 7546651797418218880, guid: 8b35ac2b36d5a0e488ec9c55a85345d3, type: 3}
   m_CommandBlock:
   - blockTitle: PART 1 - EXT OUTSKIRT
     commands:
@@ -937,9 +899,11 @@ MonoBehaviour:
     - {fileID: 1842151794}
   - blockTitle: Part 5 - EXT.  CUTSCENE - ICE CLOSEUP
     commands:
-    - {fileID: 1792051926}
     - {fileID: 2132443246}
+    - {fileID: 1792051926}
+    - {fileID: 900109909}
     - {fileID: 1713108764}
+    - {fileID: 1618138422}
     - {fileID: 1998915582}
     - {fileID: 170318976}
     - {fileID: 1789200629}
@@ -966,7 +930,6 @@ MonoBehaviour:
   - blockTitle: Part 8 - Decision
     commands:
     - {fileID: 729557754}
-    - {fileID: 360486902}
     - {fileID: 1253562050}
   m_DelayAtStart: 1
 --- !u!4 &673832909
@@ -1323,6 +1286,52 @@ MonoBehaviour:
   variableFieldType: 2
   nameVar: {fileID: 0}
   characterName: 
+--- !u!1 &900109907
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 900109908}
+  - component: {fileID: 900109909}
+  m_Layer: 0
+  m_Name: Intro farOS
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &900109908
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 900109907}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 203818838}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &900109909
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 900109907}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7320fef9f6548424fbf1e3e56b0a1a7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_CharacterName: farOS
+  m_ScreenPosition: 1
+  m_Async: 1
 --- !u!1 &924676131
 GameObject:
   m_ObjectHideFlags: 0
@@ -1634,7 +1643,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 729557753}
-  - {fileID: 360486901}
   - {fileID: 1253562049}
   m_Father: {fileID: 673832909}
   m_RootOrder: 7
@@ -1786,7 +1794,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1099214659}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1253562050
 MonoBehaviour:
@@ -1989,7 +1997,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 203818838}
-  m_RootOrder: 6
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1355754339
 GameObject:
@@ -2502,6 +2510,50 @@ MonoBehaviour:
   variableFieldType: 2
   nameVar: {fileID: 0}
   characterName: Ice
+--- !u!1 &1618138420
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1618138421}
+  - component: {fileID: 1618138422}
+  m_Layer: 0
+  m_Name: Hide Close up
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1618138421
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1618138420}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 203818838}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1618138422
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1618138420}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c082bf97e9c180442b9bd0f575389533, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SpecialSceneName: Ice Closeup
 --- !u!1 &1639205706
 GameObject:
   m_ObjectHideFlags: 0
@@ -2720,7 +2772,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 203818838}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1713108764
 MonoBehaviour:
@@ -2862,7 +2914,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 203818838}
-  m_RootOrder: 5
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1789200629
 MonoBehaviour:
@@ -2910,7 +2962,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 203818838}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1792051926
 MonoBehaviour:
@@ -2926,6 +2978,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_CharacterName: Ice
   m_ScreenPosition: 0
+  m_Async: 1
 --- !u!1 &1842151793
 GameObject:
   m_ObjectHideFlags: 0
@@ -3283,7 +3336,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 203818838}
-  m_RootOrder: 3
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1998915582
 MonoBehaviour:
@@ -3567,7 +3620,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 203818838}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2132443246
 MonoBehaviour:
@@ -3578,10 +3631,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 2132443244}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f7de2ca1dd32a8f439c7085c824b7aef, type: 3}
+  m_Script: {fileID: 11500000, guid: 3bdf1f833b4edb8488e529fc3d95158f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_CharacterName: Ice
+  m_SpecialSceneName: Ice Closeup
 --- !u!1 &2132824747
 GameObject:
   m_ObjectHideFlags: 0

@@ -3,15 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 namespace Logic
 {
-    public class Camera_CharacterCloseup : Command
+    public class Play_SpecialScene : Command
     {
         [SerializeField]
-        private string m_CharacterName = "";
+        private string m_SpecialSceneName = "";
 
         public override void Enter()
         {
             base.Enter();
-            DisplayManager.instance.CameraCloseUp(m_CharacterName);
+            DisplayManager.instance.PlaySpecialScene(m_SpecialSceneName);
             DisplayManager.instance.onLastAnimationEnd = Continue;
             m_Status = Status.Continue;
         }

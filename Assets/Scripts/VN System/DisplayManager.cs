@@ -42,7 +42,7 @@ namespace Logic
         public System.Action onNextLine = null;
         public System.Action<int> onChoiceSelected = null;
         public System.Action onBackgroundFadeEnd = null;
-        public System.Action onLastCharacterAnimationEnd = null;
+        public System.Action onLastAnimationEnd = null;
         /// <summary>
         /// Single reference of Display Manager
         /// </summary>
@@ -53,43 +53,31 @@ namespace Logic
         }
 
         [Header("Display Fields")]     
-        [SerializeField]
-        private Image m_MainBackground = null;
-        [SerializeField]
-        private RectTransform m_CharacterLayer = null;
-        [SerializeField]
-        private RectTransform[] m_CharacterScreenPivots;
+        [SerializeField] private Image m_MainBackground = null;
+        [SerializeField] private RectTransform m_OverlapLayer = null;
+        [SerializeField] private RectTransform m_CharacterLayer = null;
+        [SerializeField] private RectTransform[] m_CharacterScreenPivots;
         private StringVar m_PlayerName = null;
         [Header("Dialogue Display")]
-        [SerializeField]
-        private GameObject m_DialogueDisplay = null;
-        [SerializeField]
-        private Image m_BoxBackground = null;
-        [SerializeField]
-        private Text m_TextDisplay = null;
-        [SerializeField]
-        private GameObject m_NameDisplay = null;
-        [SerializeField]
-        private Image m_NameBackground = null;
-        [SerializeField]
-        private Text m_NameLabel = null;
-        [SerializeField]
-        private float m_TextDisplayTime = 0.016f;
+        [SerializeField] private GameObject m_DialogueDisplay = null;
+        [SerializeField] private Image m_BoxBackground = null;
+        [SerializeField] private Text m_TextDisplay = null;
+        [SerializeField] private GameObject m_NameDisplay = null;
+        [SerializeField] private Image m_NameBackground = null;
+        [SerializeField] private Text m_NameLabel = null;
+        [SerializeField] private float m_TextDisplayTime = 0.016f;
 
         [Header("Choices Display")]
-        [SerializeField]
-        private UI.ChoiceCard m_ChoiceCardPrefab = null;
-        [SerializeField]
-        private RectTransform m_ChoiceCardsPanel = null;
+        [SerializeField] private UI.ChoiceCard m_ChoiceCardPrefab = null;
+        [SerializeField] private RectTransform m_ChoiceCardsPanel = null;
         private List<UI.ChoiceCard> m_ChoiceCardsAvailable = null;
+
         [Header("Change Scene Settings")]
-        [SerializeField]
-        private float m_FadeTime = 2f;
-        [SerializeField]
-        private Image m_FadeImage = null;
+        [SerializeField] private float m_FadeTime = 2f;
+        [SerializeField] private Image m_FadeImage = null;
+
         [Header("Input")]
-        [SerializeField]
-        private string m_NextLineInput = "Space";
+        [SerializeField] private string m_NextLineInput = "Space";
         private float m_DisplaySpeed = 0.016f;
         /// <summary>
         /// Current scene 
@@ -108,6 +96,10 @@ namespace Logic
         /// List of characters displays
         /// </summary>
         private Dictionary<string, Character> m_CharactersDisplay = null;
+        /// <summary>
+        /// List of special scenes 
+        /// </summary>
+        private Dictionary<string, SpecialScene> m_SpecialScenes = null;
 
         /// <summary>
         /// Create instance of singleton
@@ -140,7 +132,7 @@ namespace Logic
         /// </summary>
         private void Update()
         {
-            if (Input.GetButtonDown(m_NextLineInput))
+            if (Input.GetButtonDown(m_NextLineInput) || Input.GetMouseButtonDown(0))
             {
                 if (m_IsReading)
                 {
@@ -178,8 +170,18 @@ namespace Logic
                     Destroy(charDisplay.Value.gameObject);
                 }
             }
+            // check if there's any previous scenes
+            if(m_SpecialScenes != null && m_SpecialScenes.Count > 0)
+            {
+                foreach(KeyValuePair<string, SpecialScene> specialScene in m_SpecialScenes)
+                {
+                    Destroy(specialScene.Value.gameObject);
+                }
+            }
             // obtain instances of characters in this scene
             m_CharactersDisplay = newScene.GetCharacters(m_CharacterLayer);
+            // get instances of special scenes for this scene
+            m_SpecialScenes = newScene.GetSpecialScenes(m_OverlapLayer);
             currentScene = newScene;
         }
 
@@ -281,12 +283,12 @@ namespace Logic
             m_CharactersDisplay[characterName].Exit();
         }
 
-        public void CharacterAnimationEnd()
+        public void AnimationEnd()
         {
-            if (onLastCharacterAnimationEnd != null)
+            if (onLastAnimationEnd != null)
             {
-                onLastCharacterAnimationEnd();
-                onLastCharacterAnimationEnd = null;
+                onLastAnimationEnd();
+                onLastAnimationEnd = null;
             }
         }
 
@@ -362,8 +364,9 @@ namespace Logic
 
         public void DisplayChoices(Choice[] choices)
         {
+            m_ChoiceCardsPanel.gameObject.SetActive(true);
             // check if no choice cards have been created
-            if(m_ChoiceCardsAvailable == null)
+            if (m_ChoiceCardsAvailable == null)
             {
                 m_ChoiceCardsAvailable = new List<UI.ChoiceCard>();
             }
@@ -425,6 +428,16 @@ namespace Logic
         public void CameraCloseUp(string characterName)
         {
             m_CharactersDisplay[characterName].CloseUp();
+        }
+
+        public void PlaySpecialScene(string sceneName)
+        {
+            m_SpecialScenes[sceneName].Play();
+        }
+
+        public void EndSpecialScene(string sceneName)
+        {
+            m_SpecialScenes[sceneName].Hide();
         }
 
         /// <summary>
