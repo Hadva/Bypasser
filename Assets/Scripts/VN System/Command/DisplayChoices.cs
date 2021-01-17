@@ -4,14 +4,14 @@ using UnityEngine;
 namespace Logic
 {
     public class DisplayChoices : Command
-    {    
-        [SerializeField]
-        private Choice[] m_Choices;
+    {
+        [SerializeField] private string m_Description = "";
+        [SerializeField] private Choice[] m_Choices;
 
         public override void Enter()
         {
             m_Status = Status.Continue;
-            DisplayManager.instance.DisplayChoices(m_Choices);
+            DisplayManager.instance.DisplayChoices(m_Description,m_Choices);
             // hook on choice selected event
             DisplayManager.instance.onChoiceSelected = SelectChoice;
         }

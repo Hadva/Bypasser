@@ -1808,6 +1808,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2df485af3d2b27643aad53ba7060b620, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_Description: What should Ice do?
   m_Choices:
   - line: Cast portal to escape
     decisionCommand: {fileID: 2132824749}

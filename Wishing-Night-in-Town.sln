@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2015
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wishing-Night-in-Town", "Wishing-Night-in-Town.csproj", "{A27348EE-A2E6-55F8-2941-C9CF59A5083A}"
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{F9411DF1-B13A-317D-A43F-91BAE4B188C6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,10 +9,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{A27348EE-A2E6-55F8-2941-C9CF59A5083A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A27348EE-A2E6-55F8-2941-C9CF59A5083A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A27348EE-A2E6-55F8-2941-C9CF59A5083A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A27348EE-A2E6-55F8-2941-C9CF59A5083A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9411DF1-B13A-317D-A43F-91BAE4B188C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9411DF1-B13A-317D-A43F-91BAE4B188C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9411DF1-B13A-317D-A43F-91BAE4B188C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9411DF1-B13A-317D-A43F-91BAE4B188C6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

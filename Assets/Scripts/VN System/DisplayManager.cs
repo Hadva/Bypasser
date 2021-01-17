@@ -69,6 +69,7 @@ namespace Logic
 
         [Header("Choices Display")]
         [SerializeField] private UI.ChoiceCard m_ChoiceCardPrefab = null;
+        [SerializeField] private Text m_ChoiceDescription = null;
         [SerializeField] private RectTransform m_ChoiceCardsPanel = null;
         private List<UI.ChoiceCard> m_ChoiceCardsAvailable = null;
 
@@ -362,8 +363,9 @@ namespace Logic
             m_IsReading = false;
         }   
 
-        public void DisplayChoices(Choice[] choices)
+        public void DisplayChoices(string description, Choice[] choices)
         {
+            m_ChoiceDescription.text = description;
             m_ChoiceCardsPanel.gameObject.SetActive(true);
             // check if no choice cards have been created
             if (m_ChoiceCardsAvailable == null)
