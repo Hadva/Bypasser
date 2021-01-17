@@ -8,3 +8,5 @@ Builds/
 .vs/
 *.sln
 *.csproj
+Logs/
+obj/
