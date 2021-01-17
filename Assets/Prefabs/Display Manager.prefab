@@ -819,7 +819,7 @@ MonoBehaviour:
   m_Padding:
     m_Left: 250
     m_Right: 250
-    m_Top: 25
+    m_Top: 35
     m_Bottom: 50
   m_ChildAlignment: 1
   m_Spacing: 0
@@ -1232,7 +1232,7 @@ MonoBehaviour:
     m_FontStyle: 0
     m_BestFit: 1
     m_MinSize: 28
-    m_MaxSize: 28
+    m_MaxSize: 36
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1

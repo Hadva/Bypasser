@@ -125,6 +125,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SceneName: Ice Closeup
   m_SpecialAnimationName: IceCloseup_Play
+  m_ImageTransform: {fileID: 7546651796257564122}
 --- !u!111 &7546651797418218887
 Animation:
   m_ObjectHideFlags: 0

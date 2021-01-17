@@ -9,7 +9,7 @@ namespace Logic
     {
         public string SceneName;
         [SerializeField] private string m_SpecialAnimationName = "";
-
+        [SerializeField] private RectTransform m_ImageTransform = null;
         private Animation m_SceneAnimation = null;
         /// Instance of rect transform of this character
         /// </summary>
@@ -24,11 +24,14 @@ namespace Logic
                 return m_RectTransform;
             }
         }
-
+        
         private void Awake()
         {
             m_SceneAnimation = GetComponent<Animation>();
             m_RectTransform = GetComponent<RectTransform>();
+            Vector2 imageSize = m_ImageTransform.sizeDelta;
+            imageSize.y *= (Screen.height / DisplayManager.instance.OriginalScreenSize.y);
+            m_ImageTransform.sizeDelta = imageSize;
         }
 
         private void Start()

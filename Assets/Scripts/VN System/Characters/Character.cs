@@ -43,13 +43,15 @@ namespace Logic
             {
                 return m_RectTransform;
             }
-        }
-
+        }        
 
         private void Awake()
         {
             m_Animator = GetComponent<Animator>();
             m_RectTransform = GetComponent<RectTransform>();
+            Vector2 sizeDelta = m_RectTransform.sizeDelta;
+            sizeDelta.x = (Screen.width / DisplayManager.instance.OriginalScreenSize.x) * sizeDelta.x;
+            m_RectTransform.sizeDelta = sizeDelta;
         }
 
         public void Enter()

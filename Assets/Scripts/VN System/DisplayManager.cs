@@ -51,7 +51,11 @@ namespace Logic
             get;
             protected set;
         }
-        [SerializeField] private Vector2 m_OriginalResolution = new Vector2(1920, 1080);
+        public Vector2 OriginalScreenSize
+        {
+            get { return m_OriginalScreenSize; }
+        }
+        [SerializeField] private Vector2 m_OriginalScreenSize = new Vector2(1920, 1080);
         [SerializeField] private float m_CurrentWrapperHeight = 350f;
         [SerializeField] private RectTransform m_DialogueWrapper = null;
         [SerializeField] private RectTransform m_ChoicesWrapper = null;
@@ -129,9 +133,9 @@ namespace Logic
             m_PlayerName = (StringVar)GlobalVariables.GetVariable<string>(GameManager.Instance.playerNameId);
             m_CameraTransform = this.transform;
             m_InitialLocalPosition = m_CameraTransform.localPosition;
-            if (Screen.height > m_OriginalResolution.y)
+            if (Screen.height > m_OriginalScreenSize.y)
             {
-                float newHeight = (Screen.height / m_OriginalResolution.y) * m_CurrentWrapperHeight;
+                float newHeight = (Screen.height / m_OriginalScreenSize.y) * m_CurrentWrapperHeight;
                 Vector2 newSize = m_DialogueWrapper.sizeDelta;
                 newSize.y = newHeight;
                 m_DialogueWrapper.sizeDelta = newSize;
