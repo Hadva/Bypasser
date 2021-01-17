@@ -1,16 +1,17 @@
 ﻿using UnityEngine;
+using System.Collections;
 namespace Logic
 {
     /// <summary>
     /// Class in charge of handling special scenes animations
     /// </summary>
-    [RequireComponent(typeof(Animation))]
     public class SpecialScene : MonoBehaviour
     {
         public string SceneName;
         [SerializeField] private string m_SpecialAnimationName = "";
         [SerializeField] private RectTransform m_ImageTransform = null;
-        private Animation m_SceneAnimation = null;
+        [SerializeField] private Vector2 m_EndPosition = new Vector2(0,-1067);
+        [SerializeField] private float m_SceneDuration = 5f;
         /// Instance of rect transform of this character
         /// </summary>
         private RectTransform m_RectTransform = null;
@@ -26,8 +27,7 @@ namespace Logic
         }
         
         private void Awake()
-        {
-            m_SceneAnimation = GetComponent<Animation>();
+        {           
             m_RectTransform = GetComponent<RectTransform>();
             Vector2 imageSize = m_ImageTransform.sizeDelta;
             imageSize.y *= (Screen.height / DisplayManager.instance.OriginalScreenSize.y);
@@ -45,7 +45,7 @@ namespace Logic
         public void Play()
         {
             gameObject.SetActive(true);
-            m_SceneAnimation.Play(m_SpecialAnimationName);
+            StartCoroutine(SceneRoutine());
         }
 
         public void Hide()
@@ -58,6 +58,21 @@ namespace Logic
             m_RectTransform.SetParent(newPivot);
             m_RectTransform.localScale = Vector3.one;
         }      
+
+        private IEnumerator SceneRoutine()
+        {
+            float elapsedTime = 0;
+            Vector2 initialPosition = m_ImageTransform.anchoredPosition;
+            m_EndPosition *= (Screen.height / DisplayManager.instance.OriginalScreenSize.y);
+            while (elapsedTime < m_SceneDuration)
+            {
+                m_ImageTransform.anchoredPosition = Vector3.Lerp(initialPosition, m_EndPosition, elapsedTime / m_SceneDuration);
+                elapsedTime += Time.deltaTime;
+                yield return null;
+            }
+            m_ImageTransform.anchoredPosition = m_EndPosition;
+            SceneAnimationEnd();
+        }
              
         public void SceneAnimationEnd()
         {

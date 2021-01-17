@@ -83,7 +83,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7546651797418218881}
   - component: {fileID: 7546651797418218880}
-  - component: {fileID: 7546651797418218887}
+  - component: {fileID: -5339128869012277562}
   m_Layer: 0
   m_Name: Ice Closeup
   m_TagString: Untagged
@@ -126,7 +126,9 @@ MonoBehaviour:
   SceneName: Ice Closeup
   m_SpecialAnimationName: IceCloseup_Play
   m_ImageTransform: {fileID: 7546651796257564122}
---- !u!111 &7546651797418218887
+  m_EndPosition: {x: 0, y: -1067}
+  m_SceneDuration: 5
+--- !u!111 &-5339128869012277562
 Animation:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -138,7 +140,6 @@ Animation:
   m_Animation: {fileID: 7400000, guid: 8605b6637039d52418b54ca16a69d324, type: 2}
   m_Animations:
   - {fileID: 7400000, guid: 8605b6637039d52418b54ca16a69d324, type: 2}
-  - {fileID: 7400000, guid: 5c7991ef290688248bb6bec63398c7e5, type: 2}
   m_WrapMode: 0
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
