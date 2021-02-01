@@ -9,10 +9,10 @@ EditorBuildSettings:
     path: Assets/Scenes/1. Menu.unity
     guid: 186a3892ff2bd98478c9916fa5a7e2c2
   - enabled: 1
-    path: Assets/Scenes/2. Chapter 1.unity
+    path: Assets/Scenes/2. Script 1.unity
     guid: cf5ecf19ba6c67d459c17ec5ef5721d5
   - enabled: 1
-    path: Assets/Scenes/3. Chapter 2.unity
+    path: Assets/Scenes/3. Script 2.unity
     guid: dcce87f3c03b9724ba9f422cfea97811
   - enabled: 1
     path: Assets/Scenes/99. ToBeContinued.unity
