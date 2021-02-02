@@ -1060,7 +1060,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 505340341}
-  - component: {fileID: 505340342}
   m_Layer: 0
   m_Name: PART 1 - EXT. OLD NHOOD COSTA
   m_TagString: Untagged
@@ -1097,22 +1096,6 @@ Transform:
   m_Father: {fileID: 1232281592}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &505340342
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 505340340}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0f74ab72d9fc9c24781093aa2bdf8b4c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Characters: []
-  m_SpecialScenes: []
-  m_CommandBlock: []
-  m_DelayAtStart: 1
 --- !u!1 &528350602
 GameObject:
   m_ObjectHideFlags: 0

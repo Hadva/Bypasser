@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &1130800984402028
+--- !u!1 &7546651796257564123
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,50 +8,50 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 224314290548114560}
-  - component: {fileID: 222360946461407534}
-  - component: {fileID: 114047011396235340}
+  - component: {fileID: 7546651796257564122}
+  - component: {fileID: 7546651796257564120}
+  - component: {fileID: 7546651796257564121}
   m_Layer: 0
-  m_Name: Character Sprite
+  m_Name: Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &224314290548114560
+--- !u!224 &7546651796257564122
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1130800984402028}
+  m_GameObject: {fileID: 7546651796257564123}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 224252860556077568}
+  m_Father: {fileID: 7546651797418218881}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!222 &222360946461407534
+  m_SizeDelta: {x: 0, y: 2148}
+  m_Pivot: {x: 0.5, y: 0}
+--- !u!222 &7546651796257564120
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1130800984402028}
+  m_GameObject: {fileID: 7546651796257564123}
   m_CullTransparentMesh: 0
---- !u!114 &114047011396235340
+--- !u!114 &7546651796257564121
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1130800984402028}
+  m_GameObject: {fileID: 7546651796257564123}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
@@ -63,7 +63,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 88ccdf8f6765376469a902cdd0faeefd, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5177b3bd4d7904642a739ee50b37d136, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -73,7 +73,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!1 &1379627611841546
+--- !u!1 &7546651797418218882
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -81,68 +81,66 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 224252860556077568}
-  - component: {fileID: 114889853546439690}
-  - component: {fileID: 95570896254247224}
+  - component: {fileID: 7546651797418218881}
+  - component: {fileID: 7546651797418218880}
+  - component: {fileID: -5339128869012277562}
   m_Layer: 0
-  m_Name: Gia
+  m_Name: Blizzard Tornado
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &224252860556077568
+--- !u!224 &7546651797418218881
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1379627611841546}
-  m_LocalRotation: {x: 0.008726558, y: -0, z: -0, w: 0.999962}
+  m_GameObject: {fileID: 7546651797418218882}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 224314290548114560}
+  - {fileID: 7546651796257564122}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 1, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0}
-  m_AnchorMax: {x: 0.5, y: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1010, y: 20}
-  m_Pivot: {x: 0.5, y: 0}
---- !u!114 &114889853546439690
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &7546651797418218880
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1379627611841546}
+  m_GameObject: {fileID: 7546651797418218882}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 90946a24166aeea4aacf328640ed7655, type: 3}
+  m_Script: {fileID: 11500000, guid: 5d7b8b83526e8ef4499386add18bb9d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CharacterName: Gia
-  m_EntryAnimationName: Entry
-  m_ExitAnimationName: Exit
-  m_CloseUpAnimationName: Close Up
---- !u!95 &95570896254247224
-Animator:
-  serializedVersion: 3
+  SceneName: Blizzard Tornado
+  m_SpecialAnimationName: Blizzard Tornado
+  m_ImageTransform: {fileID: 7546651796257564122}
+  m_EndPosition: {x: 0, y: -1067}
+  m_SceneDuration: 5
+--- !u!111 &-5339128869012277562
+Animation:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1379627611841546}
+  m_GameObject: {fileID: 7546651797418218882}
   m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: a751bd0abb3ace04c8bb8c916809da28, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 8605b6637039d52418b54ca16a69d324, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 8605b6637039d52418b54ca16a69d324, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
