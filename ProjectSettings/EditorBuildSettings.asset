@@ -18,6 +18,9 @@ EditorBuildSettings:
     path: Assets/Scenes/4. Script 2b.unity
     guid: d12ad179ab8c90b45870599732f31415
   - enabled: 1
+    path: Assets/Scenes/5. Script 3.unity
+    guid: 823e1494c9424a24bb510c99c947e039
+  - enabled: 1
     path: Assets/Scenes/99. ToBeContinued.unity
     guid: d228431beb7ca114ca4760f1bfc8cb25
   m_configObjects: {}
