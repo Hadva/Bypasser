@@ -98,7 +98,31 @@ namespace Logic
             {
                 m_Animator.SetBool(paramName, value);
             }
-        }            
+        }   
+        
+        public void SetNewPivot(RectTransform newPivot, float transitionTime)
+        {            
+            StartCoroutine(MoveToPosition(newPivot, transitionTime));
+        }
+
+        private IEnumerator MoveToPosition(RectTransform newPivot, float transitionTime)
+        {
+            m_Animator.enabled = false;
+            Vector3 endPosition = m_RectTransform.anchoredPosition;
+            m_RectTransform.SetParent(newPivot);
+            Vector3 initialPivotPosition = m_RectTransform.anchoredPosition;
+            float elapsed = 0;
+            while(elapsed < transitionTime)
+            {
+                elapsed += Time.deltaTime;
+                m_RectTransform.anchoredPosition = Vector3.Lerp(initialPivotPosition, endPosition, elapsed / transitionTime);     
+                yield return null;
+            }
+            m_RectTransform.anchoredPosition = endPosition; 
+            m_RectTransform.localScale = Vector3.one;
+            m_Animator.enabled = true;
+            CharacterAnimationEnd();
+        }
 
         public void CharacterAnimationEnd()
         {

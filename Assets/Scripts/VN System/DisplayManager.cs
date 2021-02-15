@@ -299,6 +299,14 @@ namespace Logic
             m_CharactersDisplay[characterName].Exit();
         }
 
+        /// <summary>
+        /// Move
+        /// </summary>
+        public void MoveCharacter(string characterName, int positionToMove, float moveTime)
+        {
+            m_CharactersDisplay[characterName].SetNewPivot(m_CharacterScreenPivots[positionToMove], moveTime);
+        }
+
         public void AnimationEnd()
         {
             if (onLastAnimationEnd != null)
