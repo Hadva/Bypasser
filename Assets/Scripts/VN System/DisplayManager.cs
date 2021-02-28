@@ -61,6 +61,7 @@ namespace Logic
         [SerializeField] private RectTransform m_ChoicesWrapper = null;
         [Header("Display Fields")]     
         [SerializeField] private Image m_MainBackground = null;
+        [SerializeField] private RectTransform m_SceneTransition = null;
         [SerializeField] private RectTransform m_OverlapLayer = null;
         [SerializeField] private RectTransform m_CharacterLayer = null;
         [SerializeField] private RectTransform[] m_CharacterScreenPivots;
@@ -231,25 +232,28 @@ namespace Logic
 
         private IEnumerator FadeToNewBackground(Sprite newBackground, float fadeTime)
         {
-            float splitTime = fadeTime * 0.5f;
+            m_SceneTransition.gameObject.SetActive(true);
+            Vector2 startTransitionPos = new Vector2(Screen.width * 1.5f, 0);
+            Vector3 endTransitionPos = new Vector2(-Screen.width * 1.5f, 0);
             float elapsed = 0;
+            bool backGroundSwapped = false;
+            m_SceneTransition.anchoredPosition = startTransitionPos;
             // Fade out current background to black
-            while(elapsed < splitTime)
+            while (elapsed < fadeTime)
             {
-                m_MainBackground.color = Color.Lerp(Color.white, Color.black, elapsed / splitTime);
+                m_SceneTransition.anchoredPosition = Vector2.Lerp(startTransitionPos, endTransitionPos, elapsed / fadeTime);
+                if (!backGroundSwapped && elapsed >= fadeTime * 0.5f)
+                {
+                    m_MainBackground.sprite = newBackground;
+                    backGroundSwapped = true;
+                }
                 elapsed += Time.fixedDeltaTime;
                 yield return null;
             }
-            m_MainBackground.sprite = newBackground;
-            elapsed = 0;
-            while (elapsed < splitTime)
-            {
-                m_MainBackground.color = Color.Lerp(Color.black, Color.white, elapsed / splitTime);
-                elapsed += Time.fixedDeltaTime;
-                yield return null;
-            }
+            m_SceneTransition.anchoredPosition = endTransitionPos;
+            m_SceneTransition.gameObject.SetActive(false);
             // fire on background fade end
-            if(onBackgroundFadeEnd != null)
+            if (onBackgroundFadeEnd != null)
             {
                 onBackgroundFadeEnd();
             }
