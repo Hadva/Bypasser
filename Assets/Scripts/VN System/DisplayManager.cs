@@ -96,7 +96,7 @@ namespace Logic
             protected set;
             get;
         }
-
+        private static Sprite m_LastBackgroundSprite = null;
         private Transform m_CameraTransform = null;
         private Vector3 m_InitialLocalPosition = Vector3.zero;
         private Animator m_CharacterDisplayanimator = null;
@@ -214,6 +214,7 @@ namespace Logic
             else
             {
                 m_MainBackground.sprite = newBackground;
+                m_LastBackgroundSprite = newBackground;
             }
         }
 
@@ -232,6 +233,10 @@ namespace Logic
 
         private IEnumerator FadeToNewBackground(Sprite newBackground, float fadeTime)
         {
+            if(m_LastBackgroundSprite != null)
+            {
+                m_MainBackground.sprite = m_LastBackgroundSprite;
+            }
             m_SceneTransition.gameObject.SetActive(true);
             Vector2 startTransitionPos = new Vector2(Screen.width * 1.5f, 0);
             Vector3 endTransitionPos = new Vector2(-Screen.width * 1.5f, 0);
@@ -250,6 +255,7 @@ namespace Logic
                 elapsed += Time.fixedDeltaTime;
                 yield return null;
             }
+            m_LastBackgroundSprite = newBackground;
             m_SceneTransition.anchoredPosition = endTransitionPos;
             m_SceneTransition.gameObject.SetActive(false);
             // fire on background fade end
@@ -260,7 +266,7 @@ namespace Logic
         }
 
         private IEnumerator FadeToNewBackground(Color newColor, float fadeTime, bool clearImage)
-        {
+        {            
             float elapsed = 0;
             if (clearImage) m_MainBackground.sprite = null;
             Color currentColor = m_MainBackground.color;
@@ -354,6 +360,8 @@ namespace Logic
         /// </summary>
         public void ShowDialogueDisplay()
         {
+            m_NameLabel.text = "";
+            m_TextDisplay.text = "";
             m_DialogueDisplay.SetActive(true);
         }
 

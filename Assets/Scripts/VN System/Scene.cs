@@ -24,7 +24,7 @@ namespace Logic
         /// Commands on this scene
         /// </summary>
         [SerializeField] private CommandBlock[] m_CommandBlock = null;
-        [SerializeField] private float m_DelayAtStart = 1f;
+        private float m_DelayAtStart = 0;
 
         private DisplayManager m_DisplayManager = null;
         private Status m_CurrentStatus = Status.Error;
