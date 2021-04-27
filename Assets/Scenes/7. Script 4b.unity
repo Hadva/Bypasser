@@ -396,7 +396,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_CharacterName: Eli
-  m_ScreenPosition: 1
+  m_ScreenPosition: 7
   m_Async: 0
 --- !u!1 &238472128
 GameObject:
@@ -442,7 +442,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_CharacterName: Ice
-  m_ScreenPosition: 0
+  m_ScreenPosition: 3
   m_Async: 0
 --- !u!1 &273005761
 GameObject:
@@ -621,7 +621,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_CharacterName: Ice
-  m_ScreenPosition: 0
+  m_ScreenPosition: 3
   m_Async: 0
 --- !u!1 &570871510
 GameObject:

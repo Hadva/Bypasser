@@ -822,6 +822,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_CharacterName: Noe
+  m_Async: 0
 --- !u!1 &197112213
 GameObject:
   m_ObjectHideFlags: 0
@@ -1333,6 +1334,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_CharacterName: Ice
+  m_Async: 0
 --- !u!1 &303237441
 GameObject:
   m_ObjectHideFlags: 0
@@ -1845,7 +1847,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_CharacterName: Ice
-  m_ScreenPosition: 0
+  m_ScreenPosition: 4
   m_Async: 1
 --- !u!1 &368027087
 GameObject:
@@ -2772,7 +2774,6 @@ MonoBehaviour:
     - {fileID: 1895665849}
     - {fileID: 1594768633}
     - {fileID: 1345750828}
-  m_DelayAtStart: 1
 --- !u!4 &489283462
 Transform:
   m_ObjectHideFlags: 0
@@ -2838,6 +2839,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_CharacterName: Ice
+  m_Async: 0
 --- !u!1 &503812963
 GameObject:
   m_ObjectHideFlags: 0
@@ -3310,7 +3312,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_CharacterName: Noe
-  m_ScreenPosition: 1
+  m_ScreenPosition: 8
   m_Async: 0
 --- !u!1 &719068997
 GameObject:
@@ -3356,6 +3358,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_CharacterName: Ice
+  m_Async: 0
 --- !u!1 &719101480
 GameObject:
   m_ObjectHideFlags: 0
@@ -3691,6 +3694,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_CharacterName: Mac
+  m_Async: 0
 --- !u!1 &840070139
 GameObject:
   m_ObjectHideFlags: 0
@@ -3828,6 +3832,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_CharacterName: Ice
+  m_Async: 0
 --- !u!1 &888011822
 GameObject:
   m_ObjectHideFlags: 0
@@ -3872,6 +3877,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_CharacterName: Noe
+  m_Async: 0
 --- !u!1 &892386016
 GameObject:
   m_ObjectHideFlags: 0
@@ -4154,7 +4160,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_CharacterName: Eli
-  m_ScreenPosition: 3
+  m_ScreenPosition: 9
   m_Async: 0
 --- !u!1 &972223740
 GameObject:
@@ -4343,7 +4349,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_CharacterName: Noe
-  m_ScreenPosition: 1
+  m_ScreenPosition: 7
   m_Async: 0
 --- !u!1 &1040551356
 GameObject:
@@ -4578,6 +4584,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_CharacterName: Noe
+  m_Async: 0
 --- !u!1 &1066784903
 GameObject:
   m_ObjectHideFlags: 0
@@ -4903,7 +4910,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_CharacterName: Ice
-  m_ScreenPosition: 0
+  m_ScreenPosition: 3
   m_Async: 1
 --- !u!1 &1129743501
 GameObject:
@@ -5397,7 +5404,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_CharacterName: Noe
-  m_ScreenPosition: 1
+  m_ScreenPosition: 7
   m_Async: 0
 --- !u!1 &1203834355
 GameObject:
@@ -6313,7 +6320,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_CharacterName: Noe
-  m_ScreenPosition: 1
+  m_ScreenPosition: 7
   m_Async: 0
 --- !u!1 &1473451535
 GameObject:
@@ -7154,7 +7161,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_CharacterName: Ice
-  m_ScreenPosition: 0
+  m_ScreenPosition: 3
   m_Async: 1
 --- !u!1 &1662344547
 GameObject:
@@ -7870,7 +7877,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_CharacterName: Ice
-  m_ScreenPosition: 0
+  m_ScreenPosition: 3
   m_Async: 0
 --- !u!1 &1779638514
 GameObject:
@@ -8392,6 +8399,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_CharacterName: Eli
+  m_Async: 0
 --- !u!1 &1905139699
 GameObject:
   m_ObjectHideFlags: 0
@@ -8625,6 +8633,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_CharacterName: Noe
+  m_Async: 0
 --- !u!1 &1942267675
 GameObject:
   m_ObjectHideFlags: 0
@@ -9092,7 +9101,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_CharacterName: Mac
-  m_ScreenPosition: 1
+  m_ScreenPosition: 7
   m_Async: 0
 --- !u!1 &2005918274
 GameObject:
@@ -9232,6 +9241,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_CharacterName: Noe
+  m_Async: 0
 --- !u!1 &2033437648
 GameObject:
   m_ObjectHideFlags: 0
