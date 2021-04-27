@@ -168,6 +168,53 @@ MonoBehaviour:
   variableFieldType: 2
   nameVar: {fileID: 0}
   characterName: ???
+--- !u!1 &113898854
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 113898855}
+  - component: {fileID: 113898856}
+  m_Layer: 0
+  m_Name: Ice - 7
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &113898855
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 113898854}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 206317313}
+  m_RootOrder: 15
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &113898856
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 113898854}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c78c35aff8a25b40b37b1835329427d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_NewLine: May I ask who you are?
+  variableFieldType: 2
+  nameVar: {fileID: 0}
+  characterName: Ice
 --- !u!1 &204043968
 GameObject:
   m_ObjectHideFlags: 0
@@ -253,6 +300,8 @@ Transform:
   - {fileID: 1876384100}
   - {fileID: 1980479962}
   - {fileID: 820058747}
+  - {fileID: 113898855}
+  - {fileID: 1181982796}
   m_Father: {fileID: 1382009482}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1252,6 +1301,53 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec6aa5d1ab5765347a49a836bd76a733, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1181982795
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1181982796}
+  - component: {fileID: 1181982797}
+  m_Layer: 0
+  m_Name: Eli - 7
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1181982796
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1181982795}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 206317313}
+  m_RootOrder: 16
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1181982797
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1181982795}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c78c35aff8a25b40b37b1835329427d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_NewLine: My name is Eli, I am the strongest warrior here.
+  variableFieldType: 2
+  nameVar: {fileID: 0}
+  characterName: Eli
 --- !u!1 &1308922878
 GameObject:
   m_ObjectHideFlags: 0
@@ -1465,10 +1561,52 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f74ab72d9fc9c24781093aa2bdf8b4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Characters: []
+  m_Characters:
+  - {fileID: 114889853546439690, guid: ff5bc910b68dd324c8e096e3d317aef9, type: 3}
+  - {fileID: 114889853546439690, guid: e45f7ca7e26824e48b377a675569c2f6, type: 3}
   m_SpecialScenes: []
-  m_CommandBlock: []
-  m_DelayAtStart: 1
+  m_CommandBlock:
+  - blockTitle: PART 1 - EXT. HILLTOP
+    commands:
+    - {fileID: 2024528778}
+    - {fileID: 238472130}
+    - {fileID: 204043970}
+    - {fileID: 765733769}
+    - {fileID: 934229190}
+    - {fileID: 671286448}
+    - {fileID: 427681832}
+    - {fileID: 1377066305}
+    - {fileID: 1619962694}
+    - {fileID: 1847114755}
+  - blockTitle: PART 2 - CUT. SKYLINE
+    commands:
+    - {fileID: 1782523139}
+    - {fileID: 1111151016}
+    - {fileID: 942929886}
+    - {fileID: 1810428926}
+    - {fileID: 647775921}
+    - {fileID: 31676039}
+    - {fileID: 900865331}
+    - {fileID: 1612493319}
+  - blockTitle: PART 3 - EXT. HILLTOP
+    commands:
+    - {fileID: 570871512}
+    - {fileID: 556686257}
+    - {fileID: 219529117}
+    - {fileID: 1310708627}
+    - {fileID: 712991370}
+    - {fileID: 618681072}
+    - {fileID: 1096167954}
+    - {fileID: 215131297}
+    - {fileID: 1375616894}
+    - {fileID: 1308922880}
+    - {fileID: 273005763}
+    - {fileID: 2133989753}
+    - {fileID: 1876384101}
+    - {fileID: 1980479963}
+    - {fileID: 820058748}
+    - {fileID: 113898856}
+    - {fileID: 1181982797}
 --- !u!4 &1382009482
 Transform:
   m_ObjectHideFlags: 0
@@ -1809,7 +1947,7 @@ GameObject:
   - component: {fileID: 1980479962}
   - component: {fileID: 1980479963}
   m_Layer: 0
-  m_Name: Ice - 4
+  m_Name: Ice - 6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1841,7 +1979,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c78c35aff8a25b40b37b1835329427d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_NewLine: You might a kid but it is still creepy to sneak up on people like this.
+  m_NewLine: You might be a kid but it is still creepy to sneak up on people like
+    this.
   variableFieldType: 2
   nameVar: {fileID: 0}
   characterName: Ice
@@ -1901,7 +2040,7 @@ GameObject:
   - component: {fileID: 2133989752}
   - component: {fileID: 2133989753}
   m_Layer: 0
-  m_Name: Ice - 3
+  m_Name: Ice - 5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
