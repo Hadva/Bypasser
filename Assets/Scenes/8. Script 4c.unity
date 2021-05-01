@@ -489,7 +489,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 782620511}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &260034014
 MonoBehaviour:
@@ -1951,8 +1951,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1682542681}
-  - {fileID: 260034013}
   - {fileID: 1092032284}
+  - {fileID: 260034013}
   - {fileID: 789154682}
   - {fileID: 303766836}
   - {fileID: 865300264}
@@ -3195,7 +3195,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 782620511}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1092032285
 MonoBehaviour:
@@ -5002,7 +5002,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_NewBackground: {fileID: 21300000, guid: 70f8af2d0f962804c9f0fcff5244d827, type: 3}
-  m_FadeTime: 5
+  m_FadeTime: 2
 --- !u!1 &1698003442
 GameObject:
   m_ObjectHideFlags: 0
@@ -6207,8 +6207,8 @@ MonoBehaviour:
   - blockTitle: PART 1 - EXT. FOOD MARKET
     commands:
     - {fileID: 1682542682}
-    - {fileID: 260034014}
     - {fileID: 1092032285}
+    - {fileID: 260034014}
     - {fileID: 789154683}
     - {fileID: 303766837}
     - {fileID: 865300265}
@@ -6336,7 +6336,6 @@ MonoBehaviour:
     - {fileID: 914434650}
     - {fileID: 1478959327}
     - {fileID: 31559279}
-  m_DelayAtStart: 1
 --- !u!4 &2132715914
 Transform:
   m_ObjectHideFlags: 0
